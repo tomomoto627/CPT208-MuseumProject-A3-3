@@ -9,42 +9,58 @@
   </head>
   <body>
     <nav class="top-nav" aria-label="Primary navigation">
-      <div class="top-nav-inner">
-        <a
-          class="top-nav-brand"
-          href="#motivation-research"
-          aria-label="StoryLens home"
-        >
-          <img src="assets/images/logo.png" alt="StoryLens logo" />
-        </a>
-        <ul class="top-nav-list">
-          <li>
-            <a
-              class="top-nav-link"
-              data-subnav="framework"
-              href="#motivation-research"
-              ><span class="top-nav-label">Framework Overview</span></a
-            >
-          </li>
-          <li>
-            <a class="top-nav-link" href="#contact-us"
-              ><span class="top-nav-label">Contact with us</span></a
-            >
-          </li>
-        </ul>
+      <div class="top-nav-shell">
+        <div class="top-nav-inner">
+          <a
+            class="top-nav-brand"
+            href="#motivation-research"
+            aria-label="StoryLens home"
+          >
+            <img src="assets/images/logo.png" alt="StoryLens logo" />
+          </a>
+          <ul class="top-nav-list">
+            <li>
+              <a
+                class="top-nav-link"
+                data-subnav="framework"
+                href="#motivation-research"
+                ><span class="top-nav-label">Framework Overview</span></a
+              >
+            </li>
+            <li>
+              <a class="top-nav-link" href="#contact-us"
+                ><span class="top-nav-label">Contact with us</span></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="top-nav-divider" aria-hidden="true"></div>
+        <div class="sub-nav" id="sub-nav">
+          <div class="sub-nav-inner">
+            <div class="sub-nav-list" id="sub-nav-list"></div>
+          </div>
+        </div>
       </div>
     </nav>
-    <div class="sub-nav" id="sub-nav">
-      <div class="sub-nav-inner">
-        <div class="sub-nav-list" id="sub-nav-list"></div>
-      </div>
-    </div>
 
     <header class="hero reveal">
       <div class="hero-inner container">
-        <h1>StoryLens</h1>
-        <p class="hero-subtitle">An AI-Powered Personalized Museum Companion</p>
-        <p class="hero-meta">CPT208 Group A3-3 &middot; Process Portfolio</p>
+        <article class="hero-panel">
+          <div class="hero-overlay" aria-hidden="true"></div>
+          <div class="hero-content">
+            <span class="hero-accent" aria-hidden="true"></span>
+            <h1>StoryLens</h1>
+            <p class="hero-subtitle">
+              An AI-Powered Personalized Museum Companion
+            </p>
+            <p class="hero-meta">CPT208 Group A3-3 &middot; Process Portfolio</p>
+            <div class="hero-meta-divider" aria-hidden="true"></div>
+            <a class="hero-cta" href="#motivation-research">
+              Explore the Framework
+              <span class="hero-cta-icon" aria-hidden="true"></span>
+            </a>
+          </div>
+        </article>
       </div>
     </header>
 
@@ -66,11 +82,25 @@
 
           <div class="project-intro-right">
             <div class="project-meta-item">
+              <span class="project-meta-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img">
+                  <rect x="7" y="2.75" width="10" height="18.5" rx="2.2"></rect>
+                  <line x1="10" y1="6.25" x2="14" y2="6.25"></line>
+                  <circle cx="12" cy="17.75" r="0.9"></circle>
+                </svg>
+              </span>
               <strong>Platform</strong>
               <p>Mobile-first interactive museum experience</p>
             </div>
 
             <div class="project-meta-item">
+              <span class="project-meta-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img">
+                  <path
+                    d="M12 3.5l2.35 4.77 5.27.77-3.81 3.72.9 5.26L12 15.56l-4.71 2.46.9-5.26L4.38 9.04l5.27-.77L12 3.5z"
+                  ></path>
+                </svg>
+              </span>
               <strong>Core Features</strong>
               <p>
                 Artifact scanning, story unlocks, digital collectibles,
@@ -79,6 +109,16 @@
             </div>
 
             <div class="project-meta-item">
+              <span class="project-meta-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img">
+                  <circle cx="12" cy="12" r="7"></circle>
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <line x1="12" y1="2.5" x2="12" y2="5"></line>
+                  <line x1="12" y1="19" x2="12" y2="21.5"></line>
+                  <line x1="2.5" y1="12" x2="5" y2="12"></line>
+                  <line x1="19" y1="12" x2="21.5" y2="12"></line>
+                </svg>
+              </span>
               <strong>Design Goal</strong>
               <p>
                 Make museum learning more immersive, playful, and memorable for
@@ -90,7 +130,11 @@
       </section>
 
       <section class="section container reveal team-section">
-        <h2 class="section-title">Team Members</h2>
+        <div class="section-header-block">
+          <span class="section-header-accent" aria-hidden="true"></span>
+          <h2 class="section-title">Team Members</h2>
+          <p class="section-intro">This section introduces the project team and summarizes each member's primary role and implementation contribution in the StoryLens workflow.</p>
+        </div>
         <div class="team-grid">
           <article class="member-card member-1">
             <div class="member-image-wrap">
@@ -158,8 +202,10 @@
       </section>
 
       <section class="section container reveal" id="project-timeline">
-        <h2 class="section-title">Project Timeline</h2>
-        <p class="timeline-intro">
+        <div class="section-header-block">
+          <span class="section-header-accent" aria-hidden="true"></span>
+          <h2 class="section-title">Project Timeline</h2>
+          <p class="section-intro timeline-intro">
           This timeline shows how StoryLens evolved from an initial museum
           experience problem into a high-fidelity interactive system. Each stage
           informed the next: research findings shaped the requirements,
@@ -167,84 +213,110 @@
           system features, and usability testing helped us refine the final
           prototype.
         </p>
+        </div>
+        <div class="timeline-decor" aria-hidden="true">
+          <svg viewBox="0 0 520 120" preserveAspectRatio="none">
+            <path d="M8 95 C120 20, 220 120, 330 56 S510 24, 512 30"></path>
+            <circle cx="78" cy="58" r="4"></circle>
+            <circle cx="180" cy="80" r="4"></circle>
+            <circle cx="285" cy="61" r="4"></circle>
+            <circle cx="388" cy="50" r="4"></circle>
+            <circle cx="478" cy="36" r="4"></circle>
+          </svg>
+        </div>
         <div class="timeline-wrap">
-          <table class="timeline-table">
-            <thead>
-              <tr>
-                <th>Week</th>
-                <th>Project Progress</th>
-                <th>Output</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="timeline-week">Week 2</td>
-                <td>
-                  Group A3-3 formed; museum experience selected as the design
-                  context.
-                </td>
-                <td>Topic confirmed; GitHub portfolio initialized.</td>
-              </tr>
-              <tr>
-                <td class="timeline-week">Week 4</td>
-                <td>
-                  User research conducted through background research, personas,
-                  and journey mapping.
-                </td>
-                <td>
-                  Pain points identified: unclear routes, fragmented labels,
-                  limited engagement.
-                </td>
-              </tr>
-              <tr>
-                <td class="timeline-week">Week 6</td>
-                <td>
-                  Requirements and design alternatives developed; hybrid
-                  AI-supported exploration chosen.
-                </td>
-                <td>
-                  Mid-term poster draft; low-fi prototype; design direction
-                  confirmed.
-                </td>
-              </tr>
-              <tr>
-                <td class="timeline-week">Week 8</td>
-                <td>
-                  High-fi prototype and alpha system developed around three core
-                  features.
-                </td>
-                <td>
-                  AI route recommendation, scan-to-unlock stories, and journey
-                  record implemented.
-                </td>
-              </tr>
-              <tr>
-                <td class="timeline-week">Week 9</td>
-                <td>Usability testing and feedback-driven iteration conducted.</td>
-                <td>
-                  User feedback documented; interface and interaction flow
-                  refined.
-                </td>
-              </tr>
-              <tr>
-                <td class="timeline-week">Week 10</td>
-                <td>Final portfolio and demo video completed.</td>
-                <td>
-                  Final web app, process portfolio, evaluation summary,
-                  reflection, and AI disclosure.
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="timeline-table" role="table" aria-label="Project Timeline">
+            <div class="timeline-row timeline-head" role="row">
+              <div class="timeline-cell" role="columnheader">WEEK</div>
+              <div class="timeline-cell" role="columnheader">PROJECT PROGRESS</div>
+              <div class="timeline-cell" role="columnheader">OUTPUT</div>
+            </div>
+
+            <div class="timeline-row" role="row">
+              <div class="timeline-cell timeline-week" role="cell">
+                <span class="timeline-dot" aria-hidden="true"></span>
+                <span class="timeline-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M5 21V4m0 1h9l-1.4 3L14 11H5"></path></svg>
+                </span>
+                <span class="timeline-week-label">Week 2</span>
+              </div>
+              <div class="timeline-cell" role="cell">Group A3-3 formed; museum experience selected as the design context.</div>
+              <div class="timeline-cell" role="cell">Topic confirmed; GitHub portfolio initialized.</div>
+            </div>
+
+            <div class="timeline-row" role="row">
+              <div class="timeline-cell timeline-week" role="cell">
+                <span class="timeline-dot" aria-hidden="true"></span>
+                <span class="timeline-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3"></circle><path d="M6 20c0-3.2 2.7-5.8 6-5.8s6 2.6 6 5.8"></path></svg>
+                </span>
+                <span class="timeline-week-label">Week 4</span>
+              </div>
+              <div class="timeline-cell" role="cell">User research conducted through background research, personas, and journey mapping.</div>
+              <div class="timeline-cell" role="cell">Pain points identified: unclear routes, fragmented labels, limited engagement.</div>
+            </div>
+
+            <div class="timeline-row" role="row">
+              <div class="timeline-cell timeline-week" role="cell">
+                <span class="timeline-dot" aria-hidden="true"></span>
+                <span class="timeline-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M9 14a4 4 0 1 1 6 0c-.9.7-1.5 1.7-1.7 2.8h-2.6c-.2-1.1-.8-2.1-1.7-2.8z"></path><path d="M10 19h4m-3 2h2"></path></svg>
+                </span>
+                <span class="timeline-week-label">Week 6</span>
+              </div>
+              <div class="timeline-cell" role="cell">Requirements and design alternatives developed; hybrid AI-supported exploration chosen.</div>
+              <div class="timeline-cell" role="cell">Mid-term poster draft; low-fi prototype; design direction confirmed.</div>
+            </div>
+
+            <div class="timeline-row" role="row">
+              <div class="timeline-cell timeline-week" role="cell">
+                <span class="timeline-dot" aria-hidden="true"></span>
+                <span class="timeline-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M8 8h8v8H8z"></path><path d="M4 10h2m0 4H4m14-4h2m-2 4h2M10 4v2m4-2v2m-4 12v2m4-2v2"></path></svg>
+                </span>
+                <span class="timeline-week-label">Week 8</span>
+              </div>
+              <div class="timeline-cell" role="cell">High-fi prototype and alpha system developed around three core features.</div>
+              <div class="timeline-cell" role="cell">AI route recommendation, scan-to-unlock stories, and journey record implemented.</div>
+            </div>
+
+            <div class="timeline-row" role="row">
+              <div class="timeline-cell timeline-week" role="cell">
+                <span class="timeline-dot" aria-hidden="true"></span>
+                <span class="timeline-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><rect x="5" y="4.5" width="14" height="16" rx="2"></rect><path d="M9 9h6M9 12h6M9 15h4"></path></svg>
+                </span>
+                <span class="timeline-week-label">Week 9</span>
+              </div>
+              <div class="timeline-cell" role="cell">Usability testing and feedback-driven iteration conducted.</div>
+              <div class="timeline-cell" role="cell">User feedback documented; interface and interaction flow refined.</div>
+            </div>
+
+            <div class="timeline-row" role="row">
+              <div class="timeline-cell timeline-week" role="cell">
+                <span class="timeline-dot" aria-hidden="true"></span>
+                <span class="timeline-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M8 4h8v3a4 4 0 0 1-8 0V4z"></path><path d="M8 7H5a3 3 0 0 0 3 3m8-3h3a3 3 0 0 1-3 3M12 11v5m-3 4h6"></path></svg>
+                </span>
+                <span class="timeline-week-label">Week 10</span>
+              </div>
+              <div class="timeline-cell" role="cell">Final portfolio and demo video completed.</div>
+              <div class="timeline-cell" role="cell">Final web app, process portfolio, evaluation summary, reflection, and AI disclosure.</div>
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="section container reveal" id="motivation-research">
-        <h2 class="section-title">Motivation &amp; Research</h2>
+        <div class="section-header-block">
+          <span class="section-header-accent" aria-hidden="true"></span>
+          <h2 class="section-title">Motivation &amp; Research</h2>
+          <p class="section-intro">This section introduces the project background, explains the research motivation, and outlines the problem context that shaped StoryLens as a museum-focused design direction.</p>
+        </div>
 
         <div class="motivation-content">
           <div class="motivation-topic">
-            <h3 class="motivation-topic-title" id="the-why">the why</h3>
+            <h3 class="motivation-topic-title" id="the-why">The why</h3>
             <p>
               Nowadays, many young adults visit museums infrequently and often
               find traditional exhibits unengaging, dense, or difficult to
@@ -296,135 +368,250 @@
         <h3 class="requirements-subtitle" id="the-stakeholders">
           The Stakeholders
         </h3>
-        <p class="stakeholder-intro">
-          To ground our requirements in real museum contexts, we considered the
-          needs of different stakeholders involved in the museum experience.
-          This helped us connect user pain points with practical design
-          decisions, ensuring that StoryLens is not only engaging for visitors,
-          but also feasible and meaningful in a museum setting.
-        </p>
-        <div class="stakeholder-table-wrap">
-          <table class="stakeholder-table">
-            <thead>
-              <tr>
-                <th>Stakeholder</th>
-                <th>Needs</th>
-                <th>Design Implication</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Casual young visitors</td>
-                <td>
-                  Clear, playful, and low-effort exploration. They need help
-                  deciding where to begin, what to see next, and how to stay
-                  engaged during the visit.
-                </td>
-                <td>
-                  Provide simple AI route guidance, quick artifact scanning,
-                  collection progress, points, and rewards to make exploration
-                  easier and more playful.
-                </td>
-              </tr>
-              <tr>
-                <td>Museum educators</td>
-                <td>
-                  Accurate, meaningful, and accessible cultural learning. They
-                  need the system to support interpretation rather than replace
-                  museum knowledge with unreliable AI output.
-                </td>
-                <td>
-                  Provide contextual story content, concise explanations, related
-                  labels, and responsible AI-supported interpretation.
-                </td>
-              </tr>
-              <tr>
-                <td>Museum operators</td>
-                <td>
-                  Easy deployment, low hardware cost, and maintainable
-                  visitor-facing interaction. They need a system that can work in
-                  existing museum environments.
-                </td>
-                <td>
-                  Use a mobile-first design, QR-based scanning, and lightweight
-                  digital interaction without requiring expensive AR hardware or
-                  complex installation.
-                </td>
-              </tr>
-              <tr>
-                <td>Project team</td>
-                <td>
-                  Feasible implementation within the course timeline. The system
-                  needs to be realistic to prototype, test, and present.
-                </td>
-                <td>
-                  Build with Vue-based frontend, Express backend, QR scanning,
-                  AI-supported content, and reusable interface components.
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="stakeholder-panel">
+          <p class="stakeholder-intro">
+            To ground our requirements in real museum contexts, we considered
+            the needs of different stakeholders involved in the museum
+            experience. This helped us connect user pain points with practical
+            design decisions, ensuring that StoryLens is not only engaging for
+            visitors, but also feasible and meaningful in a museum setting.
+          </p>
+
+          <div class="stakeholder-grid">
+            <article class="stakeholder-card">
+              <span class="stakeholder-index">01</span>
+              <span class="stakeholder-card-accent" aria-hidden="true"></span>
+              <div class="stakeholder-head">
+                <span class="stakeholder-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="8" r="3"></circle>
+                    <path d="M6 20c0-3.2 2.7-5.8 6-5.8s6 2.6 6 5.8"></path>
+                  </svg>
+                </span>
+                <h4>Casual Young Visitors</h4>
+              </div>
+              <div class="stakeholder-body">
+                <div class="stakeholder-block">
+                  <p class="stakeholder-label">Needs</p>
+                  <p>
+                    Clear, playful, and low-effort exploration. They need help
+                    deciding where to begin, what to see next, and how to stay
+                    engaged during the visit.
+                  </p>
+                </div>
+                <div class="stakeholder-block">
+                  <p class="stakeholder-label">Design Implication</p>
+                  <p>
+                    Provide simple AI route guidance, quick artifact scanning,
+                    collection progress, points, and rewards to make
+                    exploration easier and more playful.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="stakeholder-card">
+              <span class="stakeholder-index">02</span>
+              <span class="stakeholder-card-accent" aria-hidden="true"></span>
+              <div class="stakeholder-head">
+                <span class="stakeholder-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M3.5 6.5h7a3 3 0 0 1 3 3v8h-7a3 3 0 0 0-3 3z"></path>
+                    <path d="M20.5 6.5h-7a3 3 0 0 0-3 3v8h7a3 3 0 0 1 3 3z"></path>
+                  </svg>
+                </span>
+                <h4>Museum Educators</h4>
+              </div>
+              <div class="stakeholder-body">
+                <div class="stakeholder-block">
+                  <p class="stakeholder-label">Needs</p>
+                  <p>
+                    Accurate, meaningful, and accessible cultural learning.
+                    They need the system to support interpretation rather than
+                    replace museum knowledge with unreliable AI output.
+                  </p>
+                </div>
+                <div class="stakeholder-block">
+                  <p class="stakeholder-label">Design Implication</p>
+                  <p>
+                    Provide contextual story content, concise explanations,
+                    related labels, and responsible AI-supported
+                    interpretation.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="stakeholder-card">
+              <span class="stakeholder-index">03</span>
+              <span class="stakeholder-card-accent" aria-hidden="true"></span>
+              <div class="stakeholder-head">
+                <span class="stakeholder-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M3 20h18"></path>
+                    <path d="M5 20V9l7-4 7 4v11"></path>
+                    <path d="M8 12h2m4 0h2m-8 4h2m4 0h2"></path>
+                  </svg>
+                </span>
+                <h4>Museum Operators</h4>
+              </div>
+              <div class="stakeholder-body">
+                <div class="stakeholder-block">
+                  <p class="stakeholder-label">Needs</p>
+                  <p>
+                    Easy deployment, low hardware cost, and maintainable
+                    visitor-facing interaction. They need a system that can
+                    work in existing museum environments.
+                  </p>
+                </div>
+                <div class="stakeholder-block">
+                  <p class="stakeholder-label">Design Implication</p>
+                  <p>
+                    Use a mobile-first design, QR-based scanning, and
+                    lightweight digital interaction without requiring expensive
+                    AR hardware or complex installation.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="stakeholder-card">
+              <span class="stakeholder-index">04</span>
+              <span class="stakeholder-card-accent" aria-hidden="true"></span>
+              <div class="stakeholder-head">
+                <span class="stakeholder-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M8 8h8v8H8z"></path>
+                    <path d="M4 10h2m0 4H4m14-4h2m-2 4h2M10 4v2m4-2v2m-4 12v2m4-2v2"></path>
+                  </svg>
+                </span>
+                <h4>Project Team</h4>
+              </div>
+              <div class="stakeholder-body">
+                <div class="stakeholder-block">
+                  <p class="stakeholder-label">Needs</p>
+                  <p>
+                    Feasible implementation within the course timeline. The
+                    system needs to be realistic to prototype, test, and
+                    present.
+                  </p>
+                </div>
+                <div class="stakeholder-block">
+                  <p class="stakeholder-label">Design Implication</p>
+                  <p>
+                    Build with Vue-based frontend, Express backend, QR
+                    scanning, AI-supported content, and reusable interface
+                    components.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
         <h3 class="requirements-subtitle">Personas</h3>
-        <div class="card-grid">
+        <p class="personas-intro">
+          Representative visitors helped us ground StoryLens in real
+          motivations, pain points, and behaviors.
+        </p>
+        <div class="personas-stack">
           <article class="persona-card">
             <div class="persona-media">
               <img src="assets/images/Jamie.jpg" alt="Portrait of Haley" />
               <div class="persona-badge">
                 <h3>Haley</h3>
-                <p>Age: 21 - Computer Science Student</p>
+                <p>
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="8" r="3"></circle>
+                    <path d="M6 20c0-3.2 2.7-5.8 6-5.8s6 2.6 6 5.8"></path>
+                  </svg>
+                  21 ? Computer Science Student
+                </p>
               </div>
             </div>
 
             <div class="persona-panel">
+              <span class="persona-index">01</span>
               <p class="persona-quote">
-                "I'm not really into museums, so I want an experience that feels
-                worth my time."
+                I'm not really into museums, so I want an experience that
+                feels worth my time.
               </p>
 
-              <div class="persona-section">
-                <h4>Background</h4>
-                <p>
-                  Haley is a busy computer science student who often works late
-                  and usually spends time alone. She rarely visits museums
-                  because she feels many exhibitions are dull and not
-                  interactive enough, but she is curious about technology-based
-                  museum experiences.
-                </p>
+              <div class="persona-grid persona-grid-top">
+                <div class="persona-block">
+                  <h4>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <circle cx="12" cy="8" r="3"></circle>
+                      <path d="M6 20c0-3.2 2.7-5.8 6-5.8s6 2.6 6 5.8"></path>
+                    </svg>
+                    Background
+                  </h4>
+                  <p>
+                    Haley is a busy computer science student who often works
+                    late and usually spends time alone. She rarely visits
+                    museums because she feels many exhibitions are dull and not
+                    interactive enough, but she is curious about
+                    technology-based museum experiences.
+                  </p>
+                </div>
+                <div class="persona-block">
+                  <h4>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <circle cx="12" cy="12" r="7"></circle>
+                      <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                    Goals
+                  </h4>
+                  <ul class="persona-list">
+                    <li>Find a leisure activity that feels worth her time</li>
+                    <li>Visit museums when the experience is fun and easy</li>
+                    <li>Enjoy technology-enhanced museum experiences</li>
+                  </ul>
+                </div>
+                <div class="persona-block">
+                  <h4>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M12 3.5 3.8 18h16.4L12 3.5z"></path>
+                      <path d="M12 9v4m0 3h.01"></path>
+                    </svg>
+                    Pain Points
+                  </h4>
+                  <p>
+                    Gets overwhelmed by long and formal exhibit descriptions,
+                    and finds traditional museum experiences boring and not
+                    interactive enough.
+                  </p>
+                </div>
               </div>
 
-              <div class="persona-section">
-                <h4>Goals</h4>
-                <ul class="persona-list">
-                  <li>Find a leisure activity that feels worth her time</li>
-                  <li>Visit museums when the experience is fun and easy</li>
-                  <li>Enjoy technology-enhanced museum experiences</li>
-                </ul>
-              </div>
-
-              <div class="persona-section">
-                <h4>Pain Points</h4>
-                <p>
-                  Gets overwhelmed by long and formal exhibit descriptions, and
-                  finds traditional museum experiences boring and not
-                  interactive enough.
-                </p>
-              </div>
-
-              <div class="persona-section">
-                <h4>Behavior</h4>
-                <p>
-                  Prefers simple, direct guidance and tends to engage more when
-                  learning is clear, interactive, and supported by technology.
-                </p>
-              </div>
-
-              <div class="persona-section">
-                <h4>Motivation</h4>
-                <p>
-                  She is motivated by interactivity first, then entertainment,
-                  and finally learning value.
-                </p>
+              <div class="persona-grid persona-grid-bottom">
+                <div class="persona-block">
+                  <h4>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M12 4a8 8 0 1 0 8 8"></path>
+                      <path d="M12 1v6h6"></path>
+                    </svg>
+                    Behavior
+                  </h4>
+                  <p>
+                    Prefers simple, direct guidance and tends to engage more
+                    when learning is clear, interactive, and supported by
+                    technology.
+                  </p>
+                </div>
+                <div class="persona-block">
+                  <h4>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        d="M12 3.5l2.35 4.77 5.27.77-3.81 3.72.9 5.26L12 15.56l-4.71 2.46.9-5.26L4.38 9.04l5.27-.77L12 3.5z"
+                      ></path>
+                    </svg>
+                    Motivation
+                  </h4>
+                  <p>
+                    She is motivated by interactivity first, then
+                    entertainment, and finally learning value.
+                  </p>
+                </div>
               </div>
             </div>
           </article>
@@ -434,64 +621,102 @@
               <img src="assets/images/Evelyn.jpg" alt="Portrait of Jeanette Kim" />
               <div class="persona-badge">
                 <h3>Jeanette Kim</h3>
-                <p>Age: 32 - Museum Educator</p>
+                <p>
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="8" r="3"></circle>
+                    <path d="M6 20c0-3.2 2.7-5.8 6-5.8s6 2.6 6 5.8"></path>
+                  </svg>
+                  32 ? Museum Educator
+                </p>
               </div>
             </div>
 
             <div class="persona-panel">
+              <span class="persona-index">02</span>
               <p class="persona-quote">
-                "I think that technology should make museum learning more
-                meaningful, not just more attractive."
+                I think that technology should make museum learning more
+                meaningful, not just more attractive.
               </p>
 
-              <div class="persona-section">
-                <h4>Background</h4>
-                <p>
-                  Jeanette is an education researcher interested in cultural
-                  learning and technology-enhanced experiences. She is outgoing
-                  and energetic, visits museums frequently, and explores how
-                  digital technologies can improve learning outcomes in museum
-                  settings.
-                </p>
+              <div class="persona-grid persona-grid-top">
+                <div class="persona-block">
+                  <h4>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <circle cx="12" cy="8" r="3"></circle>
+                      <path d="M6 20c0-3.2 2.7-5.8 6-5.8s6 2.6 6 5.8"></path>
+                    </svg>
+                    Background
+                  </h4>
+                  <p>
+                    Jeanette is an education researcher interested in cultural
+                    learning and technology-enhanced experiences. She is
+                    outgoing and energetic, visits museums frequently, and
+                    explores how digital technologies can improve learning
+                    outcomes in museum settings.
+                  </p>
+                </div>
+                <div class="persona-block">
+                  <h4>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <circle cx="12" cy="12" r="7"></circle>
+                      <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                    Goals
+                  </h4>
+                  <ul class="persona-list">
+                    <li>Explore meaningful cultural learning experiences</li>
+                    <li>Understand how technology can enhance museum education</li>
+                    <li>
+                      Gain inspiration for research and educational practice
+                    </li>
+                  </ul>
+                </div>
+                <div class="persona-block">
+                  <h4>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M12 3.5 3.8 18h16.4L12 3.5z"></path>
+                      <path d="M12 9v4m0 3h.01"></path>
+                    </svg>
+                    Pain Points
+                  </h4>
+                  <p>
+                    Finds that some interactive exhibits do not support
+                    meaningful learning, and struggles to find museum
+                    experiences that effectively combine cultural value with
+                    digital innovation.
+                  </p>
+                </div>
               </div>
 
-              <div class="persona-section">
-                <h4>Goals</h4>
-                <ul class="persona-list">
-                  <li>Explore meaningful cultural learning experiences</li>
-                  <li>
-                    Understand how technology can enhance museum education
-                  </li>
-                  <li>
-                    Gain inspiration for research and educational practice
-                  </li>
-                </ul>
-              </div>
-
-              <div class="persona-section">
-                <h4>Pain Points</h4>
-                <p>
-                  Finds that some interactive exhibits do not support meaningful
-                  learning, and struggles to find museum experiences that
-                  effectively combine cultural value with digital innovation.
-                </p>
-              </div>
-
-              <div class="persona-section">
-                <h4>Behavior</h4>
-                <p>
-                  Visits museums regularly, pays close attention to learning
-                  design, and actively evaluates whether interactive systems
-                  support engagement and education.
-                </p>
-              </div>
-
-              <div class="persona-section">
-                <h4>Motivation</h4>
-                <p>
-                  Most motivated by educational value, followed by research
-                  inspiration and cultural learning impact.
-                </p>
+              <div class="persona-grid persona-grid-bottom">
+                <div class="persona-block">
+                  <h4>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M12 4a8 8 0 1 0 8 8"></path>
+                      <path d="M12 1v6h6"></path>
+                    </svg>
+                    Behavior
+                  </h4>
+                  <p>
+                    Visits museums regularly, pays close attention to learning
+                    design, and actively evaluates whether interactive systems
+                    support engagement and education.
+                  </p>
+                </div>
+                <div class="persona-block">
+                  <h4>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        d="M12 3.5l2.35 4.77 5.27.77-3.81 3.72.9 5.26L12 15.56l-4.71 2.46.9-5.26L4.38 9.04l5.27-.77L12 3.5z"
+                      ></path>
+                    </svg>
+                    Motivation
+                  </h4>
+                  <p>
+                    Most motivated by educational value, followed by research
+                    inspiration and cultural learning impact.
+                  </p>
+                </div>
               </div>
             </div>
           </article>
@@ -499,448 +724,206 @@
       </section>
 
       <section class="section container reveal" id="user-requirements">
-        <h2 class="section-title">User Requirements</h2>
-        <h3 class="requirements-subtitle" id="user-journey-map">
-          Haley's Journey Map
-        </h3>
-        <div class="journey-map-wrap">
-          <table class="journey-map">
-            <thead>
-              <tr>
-                <th>Journey steps</th>
-                <th>Discovery &amp; Onboarding</th>
-                <th>Exploration &amp; Route Guidance</th>
-                <th>Interactions</th>
-                <th>Rewards &amp; Sharing</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th class="row-label">Actions</th>
-                <td>
-                  Haley notices StoryLens at the museum entrance and learns that
-                  it can help her explore the museum in a more personalized way.
-                  She opens the mobile interface, browses the introduction, and
-                  starts by entering her interests and preferred pace so the
-                  system can recommend a route.
-                </td>
-                <td>
-                  Haley avoids crowded areas and enjoys some solo time. She
-                  follows the AI-recommended route on her phone and moves
-                  through the exhibition hall at her own pace. When she reaches
-                  an exhibit that interests her, she scans it to unlock more
-                  information.
-                </td>
-                <td>
-                  After scanning an artifact, StoryLens presents a concise
-                  story, cultural background, and related context in an
-                  accessible and engaging way. Haley taps suggested questions,
-                  reads short AI-generated explanations, and gradually develops
-                  a deeper understanding of the exhibit without feeling
-                  overwhelmed.
-                </td>
-                <td>
-                  After exploring multiple exhibits, Haley checks her journey
-                  record, views her collection progress, earns points, and
-                  discovers that she can save memorable exhibits, share her
-                  experience in the community, and redeem rewards in the museum
-                  store.
-                </td>
-              </tr>
-              <tr>
-                <th class="row-label">Touchpoints</th>
-                <td>Museum entrance poster and mobile interface</td>
-                <td>
-                  Exhibition hall, phone screen, and route recommendation page
-                </td>
-                <td>Scan interface, artifact story page, and AI Q&amp;A</td>
-                <td>
-                  Journey record page, collection progress, community sharing,
-                  and reward store
-                </td>
-              </tr>
-              <tr>
-                <th class="row-label">Emotion Curve</th>
-                <td colspan="4" class="journey-curve-cell">
-                  <svg
-                    class="journey-curve-svg"
-                    viewBox="0 0 1000 90"
-                    preserveAspectRatio="none"
-                    aria-label="Emotion curve trend"
-                    role="img"
-                  >
-                    <line
-                      x1="0"
-                      y1="75"
-                      x2="1000"
-                      y2="75"
-                      stroke="#3a3c44"
-                      stroke-width="1"
-                    />
-                    <line
-                      x1="0"
-                      y1="55"
-                      x2="1000"
-                      y2="55"
-                      stroke="#3a3c44"
-                      stroke-width="1"
-                    />
-                    <line
-                      x1="0"
-                      y1="35"
-                      x2="1000"
-                      y2="35"
-                      stroke="#3a3c44"
-                      stroke-width="1"
-                    />
-                    <polyline
-                      points="30,82 250,62 500,44 720,14 970,34"
-                      fill="none"
-                      stroke="#8ab4ff"
-                      stroke-width="3"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <circle cx="30" cy="82" r="4" fill="#f6b26b" />
-                    <circle cx="250" cy="62" r="4" fill="#f6b26b" />
-                    <circle cx="500" cy="44" r="4" fill="#f6b26b" />
-                    <circle cx="720" cy="14" r="4" fill="#f6b26b" />
-                    <circle cx="970" cy="34" r="4" fill="#f6b26b" />
-                  </svg>
-                </td>
-              </tr>
-              <tr>
-                <th class="row-label">Emotions</th>
-                <td>
-                  With some initial uncertainty but also curiosity, Haley hopes
-                  the system will make the visit easier to start and more
-                  enjoyable than a traditional museum experience.
-                </td>
-                <td>
-                  She feels relaxed and engaged. The personalized route helps
-                  her avoid unnecessary wandering and makes the exploration
-                  process feel more comfortable and self-paced.
-                </td>
-                <td>
-                  She feels surprised and satisfied. The short, interactive
-                  explanations make the artifacts easier to understand, and she
-                  enjoys learning in a lightweight and engaging way.
-                </td>
-                <td>
-                  She gains a sense of accomplishment and feels that the visit
-                  has become memorable, playful, and worth sharing, rather than
-                  just another passive museum experience.
-                </td>
-              </tr>
-              <tr>
-                <th class="row-label">Pain points</th>
-                <td>
-                  If onboarding is too long, unclear, or text-heavy, she may
-                  quickly lose patience before starting the journey.
-                </td>
-                <td>
-                  If the route recommendation feels generic, inflexible, or
-                  disconnected from her pace and interests, she may lose trust
-                  in the system.
-                </td>
-                <td>
-                  If scanning takes too long or the explanations are too
-                  lengthy, she may feel tired or awkward using the phone
-                  repeatedly in the gallery.
-                </td>
-                <td>
-                  If the journey record, reward system, or community sharing
-                  feel unclear or inconvenient, the sense of continuation after
-                  the visit becomes weaker.
-                </td>
-              </tr>
-              <tr>
-                <th class="row-label">Opportunities</th>
-                <td>
-                  Provide a lightweight onboarding experience with concise
-                  prompts and a clear explanation of how route recommendation
-                  works.
-                </td>
-                <td>
-                  Support flexible route adjustment based on user interests,
-                  available time, and preferred pace.
-                </td>
-                <td>
-                  Make scanning quick and smooth, and keep artifact stories
-                  concise, engaging, and easy to follow.
-                </td>
-                <td>
-                  Design the journey record as a meaningful extension of the
-                  museum visit by combining collection progress, reward
-                  redemption, and optional community sharing.
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="section-header-block">
+          <span class="section-header-accent" aria-hidden="true"></span>
+          <h2 class="section-title">User Requirements</h2>
+          <p class="section-intro">This section summarizes key user needs identified through journey mapping and personas, and shows how those needs informed later requirement and feature decisions.</p>
+        </div>
+        <div class="journey-heading-wrap">
+          <h3 class="requirements-subtitle" id="user-journey-map">
+            User Journey Maps
+          </h3>
+          <div class="journey-tabs" aria-label="Journey personas">
+            <button type="button" class="journey-tab is-active" data-journey-tab="haley" aria-selected="true">Haley</button>
+            <button type="button" class="journey-tab" data-journey-tab="jeanette" aria-selected="false">Jeanette</button>
+          </div>
         </div>
 
-        <h3 class="requirements-subtitle" id="user-journey-map-2">
-          Jeanette's Journey Map
-        </h3>
-        <div class="journey-map-wrap">
-          <table class="journey-map">
-            <thead>
-              <tr>
-                <th>Journey steps</th>
-                <th>Discovery &amp; Onboarding</th>
-                <th>Exploration &amp; Route Guidance</th>
-                <th>Interactions</th>
-                <th>Reflection &amp; Knowledge Sharing</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th class="row-label">Actions</th>
-                <td>
-                  Jeanette visits the museum in search of inspiration for
-                  teaching and research. She learns that StoryLens is an
-                  AI-powered museum companion and opens the mobile interface to
-                  see how it introduces the visit, defines its goals, and
-                  supports cultural learning.
-                </td>
-                <td>
-                  She moves through the exhibition hall while observing how the
-                  recommended route supports different types of visitors. From a
-                  researcher&rsquo;s perspective, she pays attention to whether
-                  the route guidance helps structure the visit meaningfully
-                  rather than simply directing movement.
-                </td>
-                <td>
-                  When scanning artifacts, Jeanette carefully examines whether
-                  StoryLens provides accurate, well-structured, and
-                  educationally valuable explanations. She also reviews the
-                  suggested questions and AI-generated responses to judge whether
-                  they support deeper cultural understanding.
-                </td>
-                <td>
-                  After the visit, Jeanette reviews the journey record and
-                  considers whether the collected exhibits, points, saved
-                  stories, and reflection-oriented summary could serve as a
-                  useful example of digital support for museum learning and
-                  educational communication.
-                </td>
-              </tr>
-              <tr>
-                <th class="row-label">Touchpoints</th>
-                <td>
-                  Museum official introduction and StoryLens mobile interface
-                </td>
-                <td>
-                  Exhibition hall, route guidance page, and observed visitor
-                  behaviour
-                </td>
-                <td>
-                  Scan interface, artifact stories, suggested questions, and AI
-                  Q&amp;A
-                </td>
-                <td>
-                  Journey record, saved exhibits, collection progress, and
-                  summary/reflection pages
-                </td>
-              </tr>
-              <tr>
-                <th class="row-label">Emotion Curve</th>
-                <td colspan="4" class="journey-curve-cell">
-                  <svg
-                    class="journey-curve-svg"
-                    viewBox="0 0 1000 90"
-                    preserveAspectRatio="none"
-                    aria-label="Emotion curve trend"
-                    role="img"
-                  >
-                    <line
-                      x1="0"
-                      y1="75"
-                      x2="1000"
-                      y2="75"
-                      stroke="#3a3c44"
-                      stroke-width="1"
-                    />
-                    <line
-                      x1="0"
-                      y1="55"
-                      x2="1000"
-                      y2="55"
-                      stroke="#3a3c44"
-                      stroke-width="1"
-                    />
-                    <line
-                      x1="0"
-                      y1="35"
-                      x2="1000"
-                      y2="35"
-                      stroke="#3a3c44"
-                      stroke-width="1"
-                    />
-                    <polyline
-                      points="30,76 250,56 500,42 720,34 970,28"
-                      fill="none"
-                      stroke="#8ab4ff"
-                      stroke-width="3"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <circle cx="30" cy="76" r="4" fill="#f6b26b" />
-                    <circle cx="250" cy="56" r="4" fill="#f6b26b" />
-                    <circle cx="500" cy="42" r="4" fill="#f6b26b" />
-                    <circle cx="720" cy="34" r="4" fill="#f6b26b" />
-                    <circle cx="970" cy="28" r="4" fill="#f6b26b" />
-                  </svg>
-                </td>
-              </tr>
-              <tr>
-                <th class="row-label">Emotions</th>
-                <td>
-                  She feels curious and professionally interested, hoping to see
-                  how digital technology can genuinely support cultural learning
-                  rather than simply adding novelty.
-                </td>
-                <td>
-                  She feels focused and thoughtful. A well-structured route
-                  makes it easier to connect the museum journey into a coherent
-                  learning experience.
-                </td>
-                <td>
-                  She feels satisfied when the explanations are concise,
-                  relevant, and educationally meaningful. She becomes more
-                  confident in the system when technology clearly supports
-                  cultural understanding.
-                </td>
-                <td>
-                  She feels rewarded if the final record and summary help
-                  capture the learning journey in a form that could support
-                  teaching, reflection, or further discussion.
-                </td>
-              </tr>
-              <tr>
-                <th class="row-label">Pain points</th>
-                <td>
-                  If onboarding explains only operational steps but fails to
-                  communicate the cultural or educational purpose of the system,
-                  the experience may feel shallow.
-                </td>
-                <td>
-                  If route recommendation is treated only as navigation and not
-                  as part of a meaningful learning structure, the educational
-                  value becomes weaker.
-                </td>
-                <td>
-                  If artifact explanations are vague, overly long, or lacking
-                  cultural depth, the interaction may feel superficial and fail
-                  to support serious learning.
-                </td>
-                <td>
-                  If the final journey summary is too simple and does not
-                  support reflection, saving, or later sharing, the system
-                  becomes less useful in educational and academic contexts.
-                </td>
-              </tr>
-              <tr>
-                <th class="row-label">Opportunities</th>
-                <td>
-                  Introduce StoryLens with both operational guidance and a clear
-                  explanation of its cultural learning purpose.
-                </td>
-                <td>
-                  Design route recommendation not only as navigation support but
-                  also as a way to structure the museum visit around coherent
-                  themes and interests.
-                </td>
-                <td>
-                  Ensure that scanned artifact content is concise, trustworthy,
-                  and layered, so users can access both lightweight and deeper
-                  forms of information.
-                </td>
-                <td>
-                  Generate a meaningful post-visit record that supports
-                  reflection, collection, and knowledge sharing, making the
-                  visit valuable beyond the exhibition hall.
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="journey-pane" data-journey-pane="haley">
+        <article class="journey-dashboard">
+          <header class="journey-dashboard-head">
+            <span class="journey-head-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3"></circle><path d="M6 20c0-3.2 2.7-5.8 6-5.8s6 2.6 6 5.8"></path></svg></span>
+            <h4>Haley's Journey Map</h4>
+          </header>
+          <div class="journey-steps">
+            <article class="journey-step-card"><span class="step-no">1</span><h5><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"></circle><path d="M20 20 16 16"></path></svg>Discovery &amp; Onboarding</h5><p class="step-label">Actions</p><p>Notices StoryLens at the museum. Opens the app, explores intro, and enters interests &amp; pace. Begins journey and gets route recommendation.</p><p class="step-label">Touchpoints</p><p>Museum entrance poster and Mobile interface</p></article>
+            <article class="journey-step-card"><span class="step-no">2</span><h5><svg viewBox="0 0 24 24"><path d="M4 18c5-9 9-3 14-12"></path><path d="M13 6h5v5"></path></svg>Exploration &amp; Route Guidance</h5><p class="step-label">Actions</p><p>Avoids crowds and explores at her pace. Follows AI-recommended route through the exhibition. Scans exhibits to unlock more information.</p><p class="step-label">Touchpoints</p><p>Exhibition hall， Phone screen, route recommendation page</p></article>
+            <article class="journey-step-card"><span class="step-no">3</span><h5><svg viewBox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.3 6.4 20.2l1.1-6.2L3 9.6l6.2-.9z"></path></svg>Interactions</h5><p class="step-label">Actions</p><p>Scans artifacts to access stories and cultural context. Views AI explanations and suggested questions. Deepens understanding through short, engaging content.</p><p class="step-label">Touchpoints</p><p>Scan interface, artifact story page and AI Q&amp;A</p></article>
+            <article class="journey-step-card"><span class="step-no">4</span><h5><svg viewBox="0 0 24 24"><path d="M4 10h16v10H4z"></path><path d="M12 10V6m0 0 2 2m-2-2-2 2"></path></svg>Rewards &amp; Sharing</h5><p class="step-label">Actions</p><p>Reviews journey record and collection progress. Earns points, saves memorable exhibits. Shares experience and redeems rewards.</p><p class="step-label">Touchpoints</p><p>Journey record page and Reward store &amp; community</p></article>
+          </div>
+          <div class="journey-curve-panel">
+            <div class="curve-label"><strong>Emotion Curve</strong><span>Overall emotional journey</span></div>
+            <div class="curve-graph"><svg viewBox="0 0 1000 130" preserveAspectRatio="none"><line x1="0" y1="98" x2="1000" y2="98"></line><line x1="0" y1="68" x2="1000" y2="68"></line><line x1="0" y1="38" x2="1000" y2="38"></line><polyline points="40,78 300,54 580,28 930,42"></polyline><circle cx="40" cy="78" r="5"></circle><circle cx="300" cy="54" r="5"></circle><circle cx="580" cy="28" r="5"></circle><circle cx="930" cy="42" r="5"></circle></svg><div class="curve-steps"><span>Discovery &amp; Onboarding</span><span>Exploration &amp; Route Guidance</span><span>Interactions</span><span>Rewards &amp; Sharing</span></div></div>
+          </div>
+          <div class="journey-matrix">
+            <div class="matrix-row"><div class="matrix-side"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2M9 10h.01M15 10h.01"></path></svg><span>Emotions</span></div><p>Curious and hopeful, wants an easier, more personal museum experience.</p><p>Relaxed and engaged, enjoys a self-paced, personalized route.</p><p>Surprised and satisfied, explanations are clear, interactive, and engaging.</p><p>Accomplished and joyful, visit feels memorable and worth sharing.</p></div>
+            <div class="matrix-row"><div class="matrix-side"><svg viewBox="0 0 24 24"><path d="M12 3.5 3.8 18h16.4L12 3.5z"></path><path d="M12 9v4m0 3h.01"></path></svg><span>Pain Points</span></div><p>Onboarding that is too long, unclear, or text-heavy can cause early drop-off.</p><p>Generic or inflexible routes can lead to wandering and loss of trust.</p><p>Slow scanning or long explanations can feel tiring or repetitive.</p><p>If records, rewards, or sharing feel unclear, motivation may fade.</p></div>
+            <div class="matrix-row"><div class="matrix-side"><svg viewBox="0 0 24 24"><path d="M9 14a4 4 0 1 1 6 0c-.9.7-1.5 1.7-1.7 2.8h-2.6c-.2-1.1-.8-2.1-1.7-2.8z"></path><path d="M10 19h4m-3 2h2"></path></svg><span>Opportunities</span></div><p>Provide a lightweight onboarding with clear prompts and route explanation.</p><p>Support flexible routes based on interests, time, and preferred pace.</p><p>Make scanning fast and stories concise, engaging, and easy to follow.</p><p>Combine journey record, rewards, and sharing to extend value.</p></div>
+          </div>
+        </article>
+        </div>
+
+        <div class="journey-pane is-hidden" data-journey-pane="jeanette" id="user-journey-map-2">
+        <article class="journey-dashboard">
+          <header class="journey-dashboard-head"><span class="journey-head-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3"></circle><path d="M6 20c0-3.2 2.7-5.8 6-5.8s6 2.6 6 5.8"></path></svg></span><h4>Jeanette's Journey Map</h4></header>
+          <div class="journey-steps">
+            <article class="journey-step-card"><span class="step-no">1</span><h5><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"></circle><path d="M20 20 16 16"></path></svg>Discovery &amp; Onboarding</h5><p class="step-label">Actions</p><p>Jeanette visits the museum in search of inspiration for teaching and research. She learns that StoryLens is an AI-powered museum companion and opens the mobile interface to see how it introduces the visit, defines its goals, and supports cultural learning.</p><p class="step-label">Touchpoints</p><p>Museum official introduction and StoryLens mobile interface</p></article>
+            <article class="journey-step-card"><span class="step-no">2</span><h5><svg viewBox="0 0 24 24"><path d="M4 18c5-9 9-3 14-12"></path><path d="M13 6h5v5"></path></svg>Exploration &amp; Route Guidance</h5><p class="step-label">Actions</p><p>She moves through the exhibition hall while observing how the recommended route supports different types of visitors. From a researcher’s perspective, she pays attention to whether the route guidance helps structure the visit meaningfully rather than simply directing movement.</p><p class="step-label">Touchpoints</p><p>Exhibition hall, route guidance page, and observed visitor behaviour</p></article>
+            <article class="journey-step-card"><span class="step-no">3</span><h5><svg viewBox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.3 6.4 20.2l1.1-6.2L3 9.6l6.2-.9z"></path></svg>Interactions</h5><p class="step-label">Actions</p><p>When scanning artifacts, Jeanette carefully examines whether StoryLens provides accurate, well-structured, and educationally valuable explanations. She also reviews the suggested questions and AI-generated responses to judge whether they support deeper cultural understanding.</p><p class="step-label">Touchpoints</p><p>Scan interface, artifact stories, suggested questions, and AI Q&amp;A</p></article>
+            <article class="journey-step-card"><span class="step-no">4</span><h5><svg viewBox="0 0 24 24"><path d="M3.5 6.5h7a3 3 0 0 1 3 3v8h-7a3 3 0 0 0-3 3z"></path><path d="M20.5 6.5h-7a3 3 0 0 0-3 3v8h7a3 3 0 0 1 3 3z"></path></svg>Reflection &amp; Knowledge Sharing</h5><p class="step-label">Actions</p><p>After the visit, Jeanette reviews the journey record and considers whether the collected exhibits, points, saved stories, and reflection-oriented summary could serve as a useful example of digital support for museum learning and educational communication.</p><p class="step-label">Touchpoints</p><p>Journey record, saved exhibits, collection progress, and summary/reflection pages</p></article>
+          </div>
+          <div class="journey-curve-panel">
+            <div class="curve-label"><strong>Emotion Curve</strong><span>Overall emotional journey</span></div>
+            <div class="curve-graph"><svg viewBox="0 0 1000 130" preserveAspectRatio="none"><line x1="0" y1="98" x2="1000" y2="98"></line><line x1="0" y1="68" x2="1000" y2="68"></line><line x1="0" y1="38" x2="1000" y2="38"></line><polyline points="40,74 300,56 580,40 930,24"></polyline><circle cx="40" cy="74" r="5"></circle><circle cx="300" cy="56" r="5"></circle><circle cx="580" cy="40" r="5"></circle><circle cx="930" cy="24" r="5"></circle></svg><div class="curve-steps"><span>Discovery &amp; Onboarding</span><span>Exploration &amp; Route Guidance</span><span>Interactions</span><span>Reflection &amp; Knowledge Sharing</span></div></div>
+          </div>
+          <div class="journey-matrix">
+            <div class="matrix-row"><div class="matrix-side"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2M9 10h.01M15 10h.01"></path></svg><span>Emotions</span></div><p>She feels curious and professionally interested, hoping to see how digital technology can genuinely support cultural learning rather than simply adding novelty.</p><p>She feels focused and thoughtful. A well-structured route makes it easier to connect the museum journey into a coherent learning experience.</p><p>She feels satisfied when the explanations are concise, relevant, and educationally meaningful. She becomes more confident when technology supports cultural understanding.</p><p>She feels rewarded if the final record and summary help capture the learning journey for teaching, reflection, or further discussion.</p></div>
+            <div class="matrix-row"><div class="matrix-side"><svg viewBox="0 0 24 24"><path d="M12 3.5 3.8 18h16.4L12 3.5z"></path><path d="M12 9v4m0 3h.01"></path></svg><span>Pain Points</span></div><p>If onboarding explains only operations but not educational purpose, the experience may feel shallow.</p><p>If route recommendation is only navigation and not meaningful structure, educational value becomes weaker.</p><p>If artifact explanations are vague, overly long, or lacking cultural depth, the interaction feels superficial.</p><p>If final summaries are too simple and do not support reflection or sharing, usefulness in education becomes limited.</p></div>
+            <div class="matrix-row"><div class="matrix-side"><svg viewBox="0 0 24 24"><path d="M9 14a4 4 0 1 1 6 0c-.9.7-1.5 1.7-1.7 2.8h-2.6c-.2-1.1-.8-2.1-1.7-2.8z"></path><path d="M10 19h4m-3 2h2"></path></svg><span>Opportunities</span></div><p>Introduce StoryLens with operational guidance and a clear explanation of cultural learning purpose.</p><p>Design route recommendation as both navigation support and thematic learning structure.</p><p>Ensure scanned artifact content is concise, trustworthy, and layered for both lightweight and deeper information.</p><p>Generate meaningful post-visit records that support reflection, collection, and knowledge sharing.</p></div>
+          </div>
+        </article>
         </div>
 
         <h3 class="requirements-subtitle" id="requirements-list">
           Requirements List
         </h3>
-        <div class="requirements-grid">
-          <article class="requirement-card">
-            <h3>R1: Clear Route Guidance</h3>
-            <p>
-              Visitors need clear and personalized guidance when they do not
-              know where to begin. Museum visits can feel fragmented when
-              routes, exhibits, labels, and stories are not connected.
-              StoryLens should help users decide where to go next based on their
-              interests, available time, and preferred pace, reducing
-              uncertainty at the start of the visit.
-            </p>
+        <p class="requirements-intro">
+          These requirements translate user research insights into concrete
+          design goals for StoryLens.
+        </p>
+        <div class="requirements-list-grid">
+          <article class="requirement-item">
+            <span class="requirement-item-accent" aria-hidden="true"></span>
+            <div class="requirement-item-head">
+              <div>
+                <p class="requirement-item-id">R1</p>
+                <h3>Clear Route Guidance</h3>
+              </div>
+              <span class="requirement-item-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="7"></circle>
+                  <path d="M12 9v3l2 2"></path>
+                </svg>
+              </span>
+            </div>
+            <div class="requirement-item-body">
+              <p class="requirement-item-label">User Need</p>
+              <p>
+                Visitors need clear and personalized guidance when they do not
+                know where to begin.
+              </p>
+            </div>
+            <div class="requirement-item-body">
+              <p class="requirement-item-label">Design Response</p>
+              <p>
+                StoryLens should help users decide where to go next based on
+                their interests, available time, and preferred pace.
+              </p>
+            </div>
+            <p class="requirement-item-tag">Route Guidance</p>
           </article>
 
-          <article class="requirement-card">
-            <h3>R2: Low-Effort Artifact Understanding</h3>
-            <p>
-              Visitors need a low-effort way to understand artifacts beyond
-              static labels. Traditional museum labels can feel passive or
-              disconnected from the visitor&rsquo;s interests. StoryLens should
-              allow users to scan an artifact and quickly unlock richer stories,
-              cultural context, and related information without requiring heavy
-              text input during the visit.
-            </p>
+          <article class="requirement-item">
+            <span class="requirement-item-accent" aria-hidden="true"></span>
+            <div class="requirement-item-head">
+              <div>
+                <p class="requirement-item-id">R2</p>
+                <h3>Low-Effort Artifact Understanding</h3>
+              </div>
+              <span class="requirement-item-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M4 6h16v12H4z"></path>
+                  <path d="M8 6v12m8-12v12"></path>
+                </svg>
+              </span>
+            </div>
+            <div class="requirement-item-body">
+              <p class="requirement-item-label">User Need</p>
+              <p>
+                Visitors need a low-effort way to understand artifacts beyond
+                static labels.
+              </p>
+            </div>
+            <div class="requirement-item-body">
+              <p class="requirement-item-label">Design Response</p>
+              <p>
+                StoryLens should allow users to scan an artifact and quickly
+                unlock richer stories, cultural context, and related
+                information without heavy text input.
+              </p>
+            </div>
+            <p class="requirement-item-tag">Artifact Stories</p>
           </article>
 
-          <article class="requirement-card">
-            <h3>R3: Playful Journey Continuity</h3>
-            <p>
-              Visitors need motivation to continue exploring, remember their
-              visit, and share their experience. A museum journey should not end
-              as a disconnected set of viewed exhibits. StoryLens should support
-              collection progress, community sharing, points, and reward
-              redemption to make the visit more playful, memorable, and socially
-              connected.
-            </p>
+          <article class="requirement-item">
+            <span class="requirement-item-accent" aria-hidden="true"></span>
+            <div class="requirement-item-head">
+              <div>
+                <p class="requirement-item-id">R3</p>
+                <h3>Playful Journey Continuity</h3>
+              </div>
+              <span class="requirement-item-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M4 10h16v10H4z"></path>
+                  <path d="M12 10V6m0 0 2 2m-2-2-2 2"></path>
+                </svg>
+              </span>
+            </div>
+            <div class="requirement-item-body">
+              <p class="requirement-item-label">User Need</p>
+              <p>
+                Visitors need motivation to continue exploring, remember their
+                visit, and share their experience.
+              </p>
+            </div>
+            <div class="requirement-item-body">
+              <p class="requirement-item-label">Design Response</p>
+              <p>
+                StoryLens should support collection progress, community sharing,
+                points, and reward redemption to make the visit more playful
+                and memorable.
+              </p>
+            </div>
+            <p class="requirement-item-tag">Journey Continuity</p>
           </article>
         </div>
 
-        <p class="alignment-label">Design Alignment</p>
-        <h3 class="requirements-subtitle">
-          Requirement&ndash;Design&ndash;Feature&ndash;Evaluation Alignment
-        </h3>
-        <p class="alignment-intro">
-          To make our design process traceable, we mapped each user requirement
-          to a design goal, a system feature, and evaluation evidence. This
-          shows how StoryLens developed from user needs into concrete design
-          decisions, rather than a set of disconnected functions.
-        </p>
-        <div class="alignment-wrap">
-          <table class="alignment-table">
+        <section class="design-alignment-section">
+          <p class="alignment-label">Design Alignment</p>
+          <h3 class="requirements-subtitle">
+            Requirement&ndash;Design&ndash;Feature&ndash;Evaluation Alignment
+          </h3>
+          <p class="alignment-intro">
+            To make our design process traceable, we mapped each user
+            requirement to a design goal, a system feature, and evaluation
+            evidence. This shows how StoryLens developed from user needs into
+            concrete design decisions, rather than a set of disconnected
+            functions.
+          </p>
+          <div class="design-alignment-wrap">
+          <table class="design-alignment-table">
             <thead>
               <tr>
-                <th>Requirement</th>
-                <th>Design Goal</th>
-                <th>System Feature</th>
-                <th>Evaluation Evidence / Design Implication</th>
+                <th><span class="design-alignment-th"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3"></circle><path d="M6 20c0-3.2 2.7-5.8 6-5.8s6 2.6 6 5.8"></path></svg>Requirement</span></th>
+                <th><span class="design-alignment-th"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7"></circle><circle cx="12" cy="12" r="3"></circle></svg>Design Goal</span></th>
+                <th><span class="design-alignment-th"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="2"></rect><path d="M4 10h3m10 0h3M10 4v3m0 10v3M14 4v3m0 10v3M4 14h3m10 0h3"></path></svg>System Feature</span></th>
+                <th><span class="design-alignment-th"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="4" width="14" height="16" rx="2"></rect><path d="m9 12 2 2 4-4"></path></svg>Evaluation Evidence / Design Implication</span></th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>
-                  <span class="alignment-tag">R1</span
+                  <span class="design-alignment-tag">R1</span
                   ><strong>Clear Route Guidance</strong><br />
                   Visitors need clear and personalized guidance when they do not
                   know where to begin.
                 </td>
                 <td>
-                  <span class="alignment-tag">DG1</span>Reduce route uncertainty
+                  <span class="design-alignment-tag">DG1</span>Reduce route uncertainty
                   and support self-paced museum exploration.
                 </td>
                 <td>
-                  <span class="alignment-tag">F1</span>AI Route Recommendation
+                  <span class="design-alignment-tag">F1</span>AI Route Recommendation
                 </td>
                 <td>
                   Users tested the route guidance flow and reported that the
@@ -951,17 +934,17 @@
               </tr>
               <tr>
                 <td>
-                  <span class="alignment-tag">R2</span
+                  <span class="design-alignment-tag">R2</span
                   ><strong>Low-Effort Artifact Understanding</strong><br />
                   Visitors need a low-effort way to understand artifacts beyond
                   static labels.
                 </td>
                 <td>
-                  <span class="alignment-tag">DG2</span>Make artifact learning
+                  <span class="design-alignment-tag">DG2</span>Make artifact learning
                   easier, richer, and more engaging.
                 </td>
                 <td>
-                  <span class="alignment-tag">F2</span>Scan to Unlock Stories +
+                  <span class="design-alignment-tag">F2</span>Scan to Unlock Stories +
                   AI Background Assistant
                 </td>
                 <td>
@@ -972,17 +955,17 @@
               </tr>
               <tr>
                 <td>
-                  <span class="alignment-tag">R3</span
+                  <span class="design-alignment-tag">R3</span
                   ><strong>Playful Journey Continuity</strong><br />
                   Visitors need motivation to continue exploring, remember their
                   visit, and share their experience.
                 </td>
                 <td>
-                  <span class="alignment-tag">DG3</span>Extend the museum visit
+                  <span class="design-alignment-tag">DG3</span>Extend the museum visit
                   through playful progress, memory, and social connection.
                 </td>
                 <td>
-                  <span class="alignment-tag">F3</span>Journey Record, Points,
+                  <span class="design-alignment-tag">F3</span>Journey Record, Points,
                   Rewards, and Community Sharing
                 </td>
                 <td>
@@ -994,13 +977,15 @@
               </tr>
             </tbody>
           </table>
-        </div>
-        <p class="alignment-intro">
-          This alignment helped us evaluate whether each feature directly
-          responded to a user requirement. It also guided later refinements,
-          such as simplifying AI text, improving scan flow, and strengthening
-          post-visit engagement.
-        </p>
+          </div>
+          <p class="design-alignment-note">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"></circle><path d="m8.5 12.5 2.2 2.2 4.8-4.8"></path></svg>
+            This alignment helped us evaluate whether each feature directly
+            responded to a user requirement. It also guided later refinements,
+            such as simplifying AI text, improving scan flow, and strengthening
+            post-visit engagement.
+          </p>
+        </section>
 
         <h3 class="requirements-subtitle" id="evidence-of-life">
           Evidence of Life
@@ -1025,69 +1010,86 @@
       </section>
 
       <section class="section container reveal" id="related-work-inspiration">
-        <h2 class="section-title">Related Work &amp; Design Inspiration</h2>
-        <p class="alignment-intro">
-          StoryLens was informed by existing museum guide systems, gamified
-          learning products, location-based exploration games, and
-          conversational AI assistants. These references helped us define not
-          only what we wanted to adopt, but also what we needed to avoid.
-        </p>
-        <div class="requirements-grid">
-          <article class="requirement-card">
-            <h3>Museum Digital Guides</h3>
-            <p>
-              Traditional museum audio guides and mobile guide apps can deliver
-              curated information, but they often follow a fixed structure.
-              Visitors may receive the same route and explanations regardless of
-              their interests, available time, or preferred pace. This inspired
-              us to design StoryLens as a flexible companion that helps visitors
-              decide where to go and why.
-            </p>
-            <p class="related-work-takeaway">
-              Design takeaway: Museum guidance should not only provide
-              information, but also help visitors make meaningful choices.
-            </p>
-          </article>
-          <article class="requirement-card">
-            <h3>Gamification and Playful Engagement</h3>
-            <p>
-              Products such as Duolingo and Pok&eacute;mon GO show how tasks,
-              progress, rewards, and collection systems can motivate continued
-              participation. However, StoryLens does not aim to turn the museum
-              into a game. Instead, it selectively uses lightweight
-              gamification, such as collection progress, points, rewards, and
-              community sharing, to support cultural exploration.
-            </p>
-            <p class="related-work-takeaway">
-              Design takeaway: Playful mechanisms should support learning and
-              exploration, not distract from them.
-            </p>
-          </article>
-          <article class="requirement-card">
-            <h3>AI Companion and Conversational Guidance</h3>
-            <p>
-              Conversational AI assistants inspired us to explore personalized
-              explanations and flexible visitor questions. However, long
-              AI-generated responses can overwhelm visitors in a museum setting.
-              For this reason, StoryLens uses AI as a concise contextual guide
-              that connects routes, artifacts, labels, and stories without
-              replacing the physical museum experience.
-            </p>
-            <p class="related-work-takeaway">
-              Design takeaway: AI should reduce cognitive load and provide useful
-              context, rather than simply generate more information.
-            </p>
-          </article>
+        <div class="related-work-panel">
+          <span class="related-work-accent" aria-hidden="true"></span>
+          <h2 class="section-title">Related Work &amp; Design Inspiration</h2>
+          <p class="alignment-intro">
+            StoryLens was informed by existing museum guide systems, gamified
+            learning products, location-based exploration games, and
+            conversational AI assistants. These references helped us define not
+            only what we wanted to adopt, but also what we needed to avoid.
+          </p>
+          <div class="related-work-grid">
+            <article class="related-work-card">
+              <span class="related-work-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 14V9a3 3 0 0 1 3-3h1v8H7a3 3 0 0 1-3-3z"></path><path d="M20 14V9a3 3 0 0 0-3-3h-1v8h1a3 3 0 0 0 3-3z"></path><path d="M8 14h8"></path></svg>
+              </span>
+              <h3>Museum Digital Guides</h3>
+              <p>
+                Traditional museum audio guides and mobile guide apps can deliver
+                curated information, but they often follow a fixed structure.
+                Visitors may receive the same route and explanations regardless of
+                their interests, available time, or preferred pace. This inspired
+                us to design StoryLens as a flexible companion that helps visitors
+                decide where to go and why.
+              </p>
+              <p class="related-work-takeaway">
+                Design takeaway: Museum guidance should not only provide
+                information, but also help visitors make meaningful choices.
+              </p>
+            </article>
+            <article class="related-work-card">
+              <span class="related-work-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M7 11h10a3 3 0 0 1 3 3v2h-3l-1.5-2H8.5L7 16H4v-2a3 3 0 0 1 3-3z"></path><circle cx="8" cy="17" r="1.5"></circle><circle cx="16" cy="17" r="1.5"></circle><path d="M9 11V8h6v3"></path></svg>
+              </span>
+              <h3>Gamification and Playful Engagement</h3>
+              <p>
+                Products such as Duolingo and Pok&eacute;mon GO show how tasks,
+                progress, rewards, and collection systems can motivate continued
+                participation. However, StoryLens does not aim to turn the museum
+                into a game. Instead, it selectively uses lightweight
+                gamification, such as collection progress, points, rewards, and
+                community sharing, to support cultural exploration.
+              </p>
+              <p class="related-work-takeaway">
+                Design takeaway: Playful mechanisms should support learning and
+                exploration, not distract from them.
+              </p>
+            </article>
+            <article class="related-work-card">
+              <span class="related-work-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="12" rx="3"></rect><path d="M8 9h8M8 12h5"></path><circle cx="15.5" cy="19" r="1.5"></circle></svg>
+              </span>
+              <h3>AI Companion and Conversational Guidance</h3>
+              <p>
+                Conversational AI assistants inspired us to explore personalized
+                explanations and flexible visitor questions. However, long
+                AI-generated responses can overwhelm visitors in a museum setting.
+                For this reason, StoryLens uses AI as a concise contextual guide
+                that connects routes, artifacts, labels, and stories without
+                replacing the physical museum experience.
+              </p>
+              <p class="related-work-takeaway">
+                Design takeaway: AI should reduce cognitive load and provide useful
+                context, rather than simply generate more information.
+              </p>
+            </article>
+          </div>
+          <p class="related-work-summary">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5l2.35 4.77 5.27.77-3.81 3.72.9 5.26L12 15.56l-4.71 2.46.9-5.26L4.38 9.04l5.27-.77L12 3.5z"></path></svg>
+            Overall, we used these inspirations not to make the museum a game, but
+            to make cultural learning easier to start, more engaging to continue,
+            and more memorable after the visit.
+          </p>
         </div>
-        <p class="alignment-intro">
-          Overall, we used these inspirations not to make the museum a game, but
-          to make cultural learning easier to start, more engaging to continue,
-          and more memorable after the visit.
-        </p>
       </section>
 
       <section class="section container reveal" id="ideation-alternatives">
-        <h2 class="section-title">Ideation &amp; Alternatives</h2>
+        <div class="section-header-block">
+          <span class="section-header-accent" aria-hidden="true"></span>
+          <h2 class="section-title">Ideation &amp; Alternatives</h2>
+          <p class="section-intro">This section presents early concept exploration, creative ideation outputs, and alternative design directions that led to the final selected solution.</p>
+        </div>
         <h3 class="requirements-subtitle" id="crazy-eights">
           The "Crazy Eights"
         </h3>
@@ -1109,70 +1111,99 @@
         <h3 class="requirements-subtitle" id="design-alternatives">
           Design Alternatives
         </h3>
-        <div class="design-alt-content">
-          <p>
-            During the design process, we explored three different ways the
-            system could support museum visitors.
-          </p>
-
-          <div class="design-alt-option">
-            <h4>Option 1: Fixed-route guide system</h4>
+        <div class="design-alt-panel">
+          <span class="design-alt-accent" aria-hidden="true"></span>
+          <div class="design-alt-content">
             <p>
-              The first idea was a traditional guided experience, where users
-              would follow a pre-designed route through the museum and receive
-              the same information in the same order. This approach would be
-              simple to use and easy to implement, especially for first-time
-              visitors. However, it felt too passive and inflexible. It could
-              not respond to different visitor interests, and it reduced the
-              sense of discovery that makes museum visits engaging.
+              During the design process, we explored three different ways the
+              system could support museum visitors.
             </p>
-          </div>
 
-          <div class="design-alt-option">
-            <h4>Option 2: Fully free exploration with scan-only interaction</h4>
-            <p>
-              The second idea focused on free exploration. Users could walk
-              through the museum at their own pace, scan artifacts, unlock
-              stories, gain points, and collect rewards. This version better
-              supported curiosity, playfulness, and gamified learning. It also
-              aligned well with our goal of making museum visits more
-              interactive. However, this approach risked making the experience
-              feel fragmented. Some users might not know where to begin, what to
-              prioritise, or how to connect individual scans into a meaningful
-              overall journey.
-            </p>
-          </div>
+            <article class="design-alt-option-card">
+              <div class="design-alt-left">
+                <span class="design-alt-index">01</span>
+                <span class="design-alt-divider" aria-hidden="true"></span>
+              </div>
+              <div class="design-alt-main">
+                <h4>Option 1: Fixed-route guide system</h4>
+                <p>
+                  The first idea was a traditional guided experience, where users
+                  would follow a pre-designed route through the museum and receive
+                  the same information in the same order. This approach would be
+                  simple to use and easy to implement, especially for first-time
+                  visitors. However, it felt too passive and inflexible. It could
+                  not respond to different visitor interests, and it reduced the
+                  sense of discovery that makes museum visits engaging.
+                </p>
+              </div>
+              <span class="design-alt-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 18c5-9 9-3 14-12"></path><path d="M13 6h5v5"></path><circle cx="5.5" cy="18" r="1.5"></circle><circle cx="18.5" cy="6" r="1.5"></circle></svg></span>
+            </article>
 
-          <div class="design-alt-option">
-            <h4>
-              Option 3: Hybrid exploration with AI route recommendation and
-              background assistant
-            </h4>
-            <p>
-              Our final concept combines user freedom with intelligent support.
-              Visitors can still explore independently, scan artifacts, collect
-              stories and rewards, and participate in the community. In
-              addition, the system includes an AI-powered route recommendation
-              feature that suggests personalised paths based on user interests,
-              such as paintings, bronzeware, or specific historical themes. We
-              also introduced a background assistant that can expand the story
-              behind scanned artifacts, offering richer explanations, contextual
-              interpretation, and a more conversational learning experience.
-            </p>
-          </div>
+            <article class="design-alt-option-card">
+              <div class="design-alt-left">
+                <span class="design-alt-index">02</span>
+                <span class="design-alt-divider" aria-hidden="true"></span>
+              </div>
+              <div class="design-alt-main">
+                <h4>Option 2: Fully free exploration with scan-only interaction</h4>
+                <p>
+                  The second idea focused on free exploration. Users could walk
+                  through the museum at their own pace, scan artifacts, unlock
+                  stories, gain points, and collect rewards. This version better
+                  supported curiosity, playfulness, and gamified learning. It also
+                  aligned well with our goal of making museum visits more
+                  interactive. However, this approach risked making the experience
+                  feel fragmented. Some users might not know where to begin, what to
+                  prioritise, or how to connect individual scans into a meaningful
+                  overall journey.
+                </p>
+              </div>
+              <span class="design-alt-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 8V5h3M17 5h3v3M20 16v3h-3M7 19H4v-3"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
+            </article>
 
-          <div class="design-alt-option">
-            <h4>Why we chose this solution</h4>
-            <p>
-              We chose this hybrid solution because it balances autonomy and
-              guidance. Compared with a fixed-route system, it offers greater
-              personalisation and a stronger sense of agency. Compared with a
-              purely free exploration model, it provides more structure and
-              interpretive depth, helping users build a more coherent and
-              meaningful museum journey. This approach also strengthens the
-              educational value of the system while keeping the experience
-              engaging, interactive, and adaptable to different visitor needs.
-            </p>
+            <article class="design-alt-option-card is-selected">
+              <div class="design-alt-left">
+                <span class="design-alt-index">03</span>
+                <span class="design-alt-divider" aria-hidden="true"></span>
+              </div>
+              <div class="design-alt-main">
+                <h4>
+                  Option 3: Hybrid exploration with AI route recommendation and
+                  background assistant
+                  <span class="design-alt-final-tag">Final Direction</span>
+                </h4>
+                <p>
+                  Our final concept combines user freedom with intelligent support.
+                  Visitors can still explore independently, scan artifacts, collect
+                  stories and rewards, and participate in the community. In
+                  addition, the system includes an AI-powered route recommendation
+                  feature that suggests personalised paths based on user interests,
+                  such as paintings, bronzeware, or specific historical themes. We
+                  also introduced a background assistant that can expand the story
+                  behind scanned artifacts, offering richer explanations, contextual
+                  interpretation, and a more conversational learning experience.
+                </p>
+              </div>
+              <span class="design-alt-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="12" rx="3"></rect><path d="M8 9h8M8 12h5"></path><circle cx="15.5" cy="19" r="1.5"></circle></svg></span>
+            </article>
+
+            <article class="design-alt-conclusion">
+              <span class="design-alt-conclusion-left" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><path d="m8.5 12.5 2.2 2.2 4.8-4.8"></path></svg></span>
+              <div class="design-alt-main">
+                <h4>Why we chose this solution</h4>
+                <p>
+                  We chose this hybrid solution because it balances autonomy and
+                  guidance. Compared with a fixed-route system, it offers greater
+                  personalisation and a stronger sense of agency. Compared with a
+                  purely free exploration model, it provides more structure and
+                  interpretive depth, helping users build a more coherent and
+                  meaningful museum journey. This approach also strengthens the
+                  educational value of the system while keeping the experience
+                  engaging, interactive, and adaptable to different visitor needs.
+                </p>
+              </div>
+              <span class="design-alt-conclusion-right" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 5h10v3a5 5 0 0 1-10 0V5z"></path><path d="M7 8H4a3 3 0 0 0 3 3m10-3h3a3 3 0 0 1-3 3M12 13v5m-3 3h6"></path></svg></span>
+            </article>
           </div>
         </div>
 
@@ -1212,73 +1243,147 @@
         </div>
       </section>
 
-      <section class="section container reveal" id="technical-implementation">
-        <h2 class="section-title">Technical Implementation</h2>
-        <p class="tech-intro">
-          This section summarizes how StoryLens was implemented across frontend,
-          backend, AI services, scanning interaction, and deployment workflows.
-          The goal was to keep the experience interactive while maintaining a
-          reliable architecture for museum exploration features.
-        </p>
-        <div class="tech-pillars-grid">
-          <article class="tech-pillar-card">
-            <span class="tech-pillar-label">Frontend</span>
-            <h4>Interface &amp; Navigation</h4>
-            <p>
-              Vue.js 3 + Vite powers core views including Home, Scan,
-              Collection, Store, Community, Profile, and authentication pages.
-            </p>
-          </article>
-          <article class="tech-pillar-card">
-            <span class="tech-pillar-label">Backend</span>
-            <h4>Data Flow &amp; API Layer</h4>
-            <p>
-              Express.js provides AI chat, image classification, and health
-              endpoints with service modules for response generation and vision.
-            </p>
-          </article>
-          <article class="tech-pillar-card">
-            <span class="tech-pillar-label">Interaction</span>
-            <h4>Scanning, Collection &amp; Community</h4>
-            <p>
-              QR scanning, 3D model rendering, collection logic, store points,
-              and community interactions were integrated as one user journey.
-            </p>
-          </article>
-          <article class="tech-pillar-card">
-            <span class="tech-pillar-label">AI Support</span>
-            <h4>Intelligent Assistance</h4>
-            <p>
-              AI Q&amp;A, artifact recognition, and SSE streaming responses were
-              connected through dedicated backend services and knowledge data.
-            </p>
-          </article>
-          <article class="tech-pillar-card">
-            <span class="tech-pillar-label">Data &amp; Content</span>
-            <h4>Artifact Knowledge Base</h4>
-            <p>
-              Structured artifact content in
-              <code>artifact_knowledge.json</code> supports historical and
-              symbolic interpretation.
-            </p>
-          </article>
-          <article class="tech-pillar-card">
-            <span class="tech-pillar-label">Deployment</span>
-            <h4>Testing &amp; Delivery</h4>
-            <p>
-              End-to-end debugging, compatibility checks, docs, and deployment
-              packaging supported final submission quality.
-            </p>
-          </article>
+            <section class="section container reveal" id="technical-implementation">
+        <div class="tech-implementation-panel section-header-block">
+          <span class="tech-implementation-accent section-header-accent" aria-hidden="true"></span>
+          <h2 class="section-title">Technical Implementation</h2>
+          <p class="tech-intro section-intro">
+            This section summarizes how StoryLens was implemented across frontend,
+            backend, AI services, scanning interaction, and deployment workflows.
+            The goal was to keep the experience interactive while maintaining a
+            reliable architecture for museum exploration features.
+          </p>
+          <div class="tech-pillars-grid">
+            <article class="tech-pillar-card">
+              <div class="tech-pillar-head">
+                <span class="tech-pillar-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <rect x="3" y="4" width="18" height="14" rx="2"></rect>
+                    <path d="M8 20h8"></path>
+                    <path d="M12 18v2"></path>
+                  </svg>
+                </span>
+                <span class="tech-pillar-label">Frontend</span>
+              </div>
+              <h4>Interface &amp; Navigation</h4>
+              <span class="tech-pillar-accent" aria-hidden="true"></span>
+              <p>
+                Vue.js 3 + Vite powers core views including Home, Scan,
+                Collection, Store, Community, Profile, and authentication pages.
+              </p>
+            </article>
+            <article class="tech-pillar-card">
+              <div class="tech-pillar-head">
+                <span class="tech-pillar-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <rect x="3" y="4" width="18" height="6" rx="1.5"></rect>
+                    <rect x="3" y="14" width="18" height="6" rx="1.5"></rect>
+                    <path d="M7 7h.01M7 17h.01"></path>
+                  </svg>
+                </span>
+                <span class="tech-pillar-label">Backend</span>
+              </div>
+              <h4>Data Flow &amp; API Layer</h4>
+              <span class="tech-pillar-accent" aria-hidden="true"></span>
+              <p>
+                Express.js provides AI chat, image classification, and health
+                endpoints with service modules for response generation and vision.
+              </p>
+            </article>
+            <article class="tech-pillar-card">
+              <div class="tech-pillar-head">
+                <span class="tech-pillar-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M4 8V4h4"></path>
+                    <path d="M20 8V4h-4"></path>
+                    <path d="M4 16v4h4"></path>
+                    <path d="M20 16v4h-4"></path>
+                    <path d="M8 12h8"></path>
+                  </svg>
+                </span>
+                <span class="tech-pillar-label">Interaction</span>
+              </div>
+              <h4>Scanning, Collection &amp; Community</h4>
+              <span class="tech-pillar-accent" aria-hidden="true"></span>
+              <p>
+                QR scanning, 3D model rendering, collection logic, store points,
+                and community interactions were integrated as one user journey.
+              </p>
+            </article>
+            <article class="tech-pillar-card">
+              <div class="tech-pillar-head">
+                <span class="tech-pillar-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M21 12a8.9 8.9 0 0 1-.9 4"></path>
+                    <path d="M3 12a8.9 8.9 0 0 0 .9 4"></path>
+                    <path d="M8 15h8"></path>
+                    <rect x="7" y="7" width="10" height="8" rx="3"></rect>
+                    <circle cx="10" cy="11" r="1"></circle>
+                    <circle cx="14" cy="11" r="1"></circle>
+                  </svg>
+                </span>
+                <span class="tech-pillar-label">AI Support</span>
+              </div>
+              <h4>Intelligent Assistance</h4>
+              <span class="tech-pillar-accent" aria-hidden="true"></span>
+              <p>
+                AI Q&amp;A, artifact recognition, and SSE streaming responses were
+                connected through dedicated backend services and knowledge data.
+              </p>
+            </article>
+            <article class="tech-pillar-card">
+              <div class="tech-pillar-head">
+                <span class="tech-pillar-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <ellipse cx="12" cy="6" rx="7" ry="3"></ellipse>
+                    <path d="M5 6v8c0 1.7 3.1 3 7 3s7-1.3 7-3V6"></path>
+                    <path d="M5 10c0 1.7 3.1 3 7 3s7-1.3 7-3"></path>
+                  </svg>
+                </span>
+                <span class="tech-pillar-label">Data &amp; Content</span>
+              </div>
+              <h4>Artifact Knowledge Base</h4>
+              <span class="tech-pillar-accent" aria-hidden="true"></span>
+              <p>
+                Structured artifact content in
+                <code>artifact_knowledge.json</code> supports historical and
+                symbolic interpretation.
+              </p>
+            </article>
+            <article class="tech-pillar-card">
+              <div class="tech-pillar-head">
+                <span class="tech-pillar-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M12 3v10"></path>
+                    <path d="m8 9 4 4 4-4"></path>
+                    <rect x="4" y="15" width="16" height="6" rx="2"></rect>
+                  </svg>
+                </span>
+                <span class="tech-pillar-label">Deployment</span>
+              </div>
+              <h4>Testing &amp; Delivery</h4>
+              <span class="tech-pillar-accent" aria-hidden="true"></span>
+              <p>
+                End-to-end debugging, compatibility checks, docs, and deployment
+                packaging supported final submission quality.
+              </p>
+            </article>
+          </div>
         </div>
         <div class="outline-group">
           <h3 class="requirements-subtitle" id="system-architecture">
             System Architecture
           </h3>
-          <div class="outline-item">
+                    <div class="outline-item system-architecture-panel">
+            <span class="system-architecture-accent" aria-hidden="true"></span>
             <div class="architecture-description">
-              <article class="architecture-block">
-                <h6>Frontend (Vue.js 3 + Vite)</h6>
+              <article class="architecture-block architecture-block--frontend">
+                <div class="architecture-card-head">
+                  <span class="architecture-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"></rect><path d="M8 20h8"></path><path d="M12 18v2"></path></svg>
+                  </span>
+                  <h6>Frontend (Vue.js 3 + Vite)</h6>
+                </div>
                 <ul>
                   <li>
                     <strong>Pages/Views:</strong> HomeView (museum map with AI
@@ -1299,8 +1404,13 @@
                   </li>
                 </ul>
               </article>
-              <article class="architecture-block">
-                <h6>Backend (Express.js)</h6>
+              <article class="architecture-block architecture-block--backend">
+                <div class="architecture-card-head">
+                  <span class="architecture-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" rx="1.5"></rect><rect x="3" y="14" width="18" height="6" rx="1.5"></rect><path d="M7 7h.01M7 17h.01"></path></svg>
+                  </span>
+                  <h6>Backend (Express.js)</h6>
+                </div>
                 <ul>
                   <li>
                     <strong>API Endpoints:</strong> /api/agent/chat (AI chat
@@ -1317,8 +1427,13 @@
                   </li>
                 </ul>
               </article>
-              <article class="architecture-block">
-                <h6>External Services</h6>
+              <article class="architecture-block architecture-block--services">
+                <div class="architecture-card-head">
+                  <span class="architecture-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M6 15a4 4 0 1 1 1.2-7.8A5 5 0 0 1 17.8 8H18a3 3 0 0 1 0 6H6z"></path><path d="M9 12h6"></path></svg>
+                  </span>
+                  <h6>External Services</h6>
+                </div>
                 <ul>
                   <li>Google Model Viewer for 3D rendering</li>
                   <li>QR Scanner for code recognition</li>
@@ -1327,8 +1442,13 @@
                   </li>
                 </ul>
               </article>
-              <article class="architecture-block">
-                <h6>Core Features</h6>
+              <article class="architecture-block architecture-block--features">
+                <div class="architecture-card-head">
+                  <span class="architecture-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><rect x="4" y="4" width="6" height="6" rx="1"></rect><rect x="14" y="4" width="6" height="6" rx="1"></rect><rect x="4" y="14" width="6" height="6" rx="1"></rect><rect x="14" y="14" width="6" height="6" rx="1"></rect></svg>
+                  </span>
+                  <h6>Core Features</h6>
+                </div>
                 <ul>
                   <li>
                     Museum Navigation, Artifact Scanning with 3D viewing,
@@ -1337,97 +1457,121 @@
                   </li>
                 </ul>
               </article>
-            </div>
-            <div class="lowfi-collage tech-figure-wrap">
-              <figure class="lowfi-item">
-                <img src="assets/images/system.png" alt="System Architecture Diagram" />
-              </figure>
+              <article class="architecture-block architecture-block--snapshot">
+                <div class="architecture-card-head">
+                  <span class="architecture-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M4 7h4l1.4-2h5.2L16 7h4v12H4z"></path><circle cx="12" cy="13" r="3.2"></circle></svg>
+                  </span>
+                  <h6>Architecture Snapshot</h6>
+                </div>
+                <div class="lowfi-collage tech-figure-wrap">
+                  <figure class="lowfi-item">
+                    <img src="assets/images/system.png" alt="System Architecture Diagram" />
+                  </figure>
+                </div>
+              </article>
             </div>
           </div>
-
           <h3 class="requirements-subtitle" id="individual-contributions">
             Individual Contributions
           </h3>
           <div class="outline-item">
-            <div class="contribution-table-wrap">
-              <table class="contribution-table">
-                <thead>
-                  <tr>
-                    <th>Member</th>
-                    <th>Core Role</th>
-                    <th>Responsible Modules</th>
-                    <th>Specific Work (Code/UI/Content/Testing)</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Minghao Lin</td>
-                    <td>Frontend Lead Developer + State Management</td>
-                    <td>Core Pages + Global State</td>
-                    <td>
-                      <strong>Code:</strong>
-                      1. Set up Vue3 + Vite project framework, router
-                      configuration, App.vue entry<br />
-                      2. Develop HomeView (Homepage), ScanView (QR Scan
-                      Page)<br />
-                      3. Implement QR scanning, 3D artifact model rendering<br />
-                      4. Write museum/store.js global state management (artifact
-                      data / collection logic)<br />
-                      5. Package public utility classes, API request tools
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Jiaqi Wang</td>
-                    <td>Frontend Page Developer + Styling / UI</td>
-                    <td>Business Pages + UI Design</td>
-                    <td>
-                      <strong>Code + UI Design:</strong>
-                      1. Develop CollectionView (Collection), StoreView (Store),
-                      CommunityView (Community)<br />
-                      2. Develop simulated login interface<br />
-                      3. Full UI design and style development (page layout,
-                      interactions, component styling)<br />
-                      4. Implement shopping cart, points, posting / likes /
-                      comments functionality<br />
-                      5. Mobile adaptation and page interaction optimization
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Xinyi Yuan</td>
-                    <td>Backend Developer + AI Services + Content</td>
-                    <td>Server Side + Project Content</td>
-                    <td>
-                      <strong>Code + Content:</strong>
-                      1. Set up Express backend service, write index.js entry<br />
-                      2. Develop authentication API, artifact data API,
-                      community social API<br />
-                      3. Integrate AI proxy services (artifact Q&amp;A, image
-                      recognition, SSE streaming response)<br />
-                      4. Create and organize artifact_knowledge.json artifact
-                      knowledge base<br />
-                      5. Prepare 3D models, QR code images, documents, API
-                      documentation
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Zihan Qian</td>
-                    <td>Testing + Deployment + Documentation</td>
-                    <td>Full Testing + Project Delivery</td>
-                    <td>
-                      <strong>Testing + Deployment + Documentation:</strong>
-                      1. Frontend-backend debugging, functional testing<br />
-                      2. Frontend-backend interface debugging, compatibility
-                      testing, dialog, bug fixes / store module full testing<br />
-                      3. Local project deployment, deployment configuration
-                      documentation<br />
-                      4. Write README.md, environment configuration
-                      instructions, user manual<br />
-                      5. Final project packaging, submission materials
-                      preparation
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+            <div class="contribution-table-wrap contribution-cards-wrap">
+              <article class="contribution-row-card">
+                <div class="contribution-col contribution-col-member">
+                  <span class="contribution-no">01</span>
+                  <div>
+                    <h4 class="contribution-name">Minghao Lin</h4>
+                    <p class="contribution-role">Frontend Lead Developer + State Management</p>
+                  </div>
+                </div>
+                <div class="contribution-col contribution-col-modules">
+                  <p class="contribution-label">Responsible Modules</p>
+                  <p>Core Pages + Global State</p>
+                </div>
+                <div class="contribution-col contribution-col-work">
+                  <p class="contribution-label">Specific Work (Code/UI/Content/Testing)</p>
+                  <ol class="contribution-list">
+                    <li><span>1.</span>Set up Vue3 + Vite project framework, router configuration, App.vue entry</li>
+                    <li><span>2.</span>Develop HomeView (Homepage), ScanView (QR Scan Page)</li>
+                    <li><span>3.</span>Implement QR scanning, 3D artifact model rendering</li>
+                    <li><span>4.</span>Write museum/store.js global state management (artifact data / collection logic)</li>
+                    <li><span>5.</span>Package public utility classes, API request tools</li>
+                  </ol>
+                </div>
+              </article>
+
+              <article class="contribution-row-card">
+                <div class="contribution-col contribution-col-member">
+                  <span class="contribution-no">02</span>
+                  <div>
+                    <h4 class="contribution-name">Jiaqi Wang</h4>
+                    <p class="contribution-role">Frontend Page Developer + Styling / UI</p>
+                  </div>
+                </div>
+                <div class="contribution-col contribution-col-modules">
+                  <p class="contribution-label">Responsible Modules</p>
+                  <p>Business Pages + UI Design</p>
+                </div>
+                <div class="contribution-col contribution-col-work">
+                  <p class="contribution-label">Specific Work (Code/UI/Content/Testing)</p>
+                  <ol class="contribution-list">
+                    <li><span>1.</span>Develop CollectionView (Collection), StoreView (Store), CommunityView (Community)</li>
+                    <li><span>2.</span>Develop simulated login interface</li>
+                    <li><span>3.</span>Full UI design and style development (page layout, interactions, component styling)</li>
+                    <li><span>4.</span>Implement shopping cart, points, posting / likes / comments functionality</li>
+                    <li><span>5.</span>Mobile adaptation and page interaction optimization</li>
+                  </ol>
+                </div>
+              </article>
+
+              <article class="contribution-row-card">
+                <div class="contribution-col contribution-col-member">
+                  <span class="contribution-no">03</span>
+                  <div>
+                    <h4 class="contribution-name">Xinyi Yuan</h4>
+                    <p class="contribution-role">Backend Developer + AI Services + Content</p>
+                  </div>
+                </div>
+                <div class="contribution-col contribution-col-modules">
+                  <p class="contribution-label">Responsible Modules</p>
+                  <p>Server Side + Project Content</p>
+                </div>
+                <div class="contribution-col contribution-col-work">
+                  <p class="contribution-label">Specific Work (Code/UI/Content/Testing)</p>
+                  <ol class="contribution-list">
+                    <li><span>1.</span>Set up Express backend service, write index.js entry</li>
+                    <li><span>2.</span>Develop authentication API, artifact data API, community social API</li>
+                    <li><span>3.</span>Integrate AI proxy services (artifact Q&amp;A, image recognition, SSE streaming response)</li>
+                    <li><span>4.</span>Create and organize artifact_knowledge.json artifact knowledge base</li>
+                    <li><span>5.</span>Prepare 3D models, QR code images, documents, API documentation</li>
+                  </ol>
+                </div>
+              </article>
+
+              <article class="contribution-row-card">
+                <div class="contribution-col contribution-col-member">
+                  <span class="contribution-no">04</span>
+                  <div>
+                    <h4 class="contribution-name">Zihan Qian</h4>
+                    <p class="contribution-role">Testing + Deployment + Documentation</p>
+                  </div>
+                </div>
+                <div class="contribution-col contribution-col-modules">
+                  <p class="contribution-label">Responsible Modules</p>
+                  <p>Full Testing + Project Delivery</p>
+                </div>
+                <div class="contribution-col contribution-col-work">
+                  <p class="contribution-label">Specific Work (Code/UI/Content/Testing)</p>
+                  <ol class="contribution-list">
+                    <li><span>1.</span>Frontend-backend debugging, functional testing</li>
+                    <li><span>2.</span>Frontend-backend interface debugging, compatibility testing, dialog, bug fixes / store module full testing</li>
+                    <li><span>3.</span>Local project deployment, deployment configuration documentation</li>
+                    <li><span>4.</span>Write README.md, environment configuration instructions, user manual</li>
+                    <li><span>5.</span>Final project packaging, submission materials preparation</li>
+                  </ol>
+                </div>
+              </article>
             </div>
           </div>
 
@@ -1467,142 +1611,146 @@
         </div>
       </section>
 
-      <section class="section container reveal" id="ai-assisted-development">
-        <h2 class="section-title">AI-assisted Development / Vibe Coding Process</h2>
-        <p class="alignment-intro">
-          During the development of StoryLens, we adopted an AI-assisted
-          workflow (often referred to as &ldquo;vibe coding&rdquo;) to support
-          both design and implementation. Rather than replacing human
-          decision-making, AI tools were used to accelerate iteration, explore
-          alternatives, and refine ideas.
-        </p>
-        <div class="outline-group">
-          <div class="outline-item">
-            <h4>Tools Used</h4>
-            <ul class="persona-list">
-              <li>
-                Large language models for generating UI text, structuring design
-                ideas, and debugging code
-              </li>
-              <li>
-                AI-assisted coding tools to refine frontend logic and improve
-                component structure
-              </li>
-              <li>
-                AI image generation tools for early visual exploration and
-                concept inspiration
-              </li>
-              <li>
-                AI Q&amp;A systems to quickly understand unfamiliar technical
-                concepts (e.g., SSE communication, API structure)
-              </li>
-            </ul>
-          </div>
-          <div class="outline-item">
-            <h4>What Worked Well</h4>
-            <ul class="persona-list">
-              <li>Rapid prototyping of UI text and interaction flows</li>
-              <li>
-                Generating alternative design directions during ideation
-              </li>
-              <li>
-                Assisting debugging by identifying common coding errors
-              </li>
-              <li>
-                Helping structure technical implementation (e.g., API flow,
-                component hierarchy)
-              </li>
-              <li>
-                Supporting prompt-based refinement of features such as AI route
-                recommendation and storytelling
-              </li>
-            </ul>
-            <p>
-              These contributions allowed the team to iterate faster and explore
-              more design variations than manual methods alone.
-            </p>
-          </div>
-          <div class="outline-item">
-            <h4>What Did Not Work Well</h4>
-            <ul class="persona-list">
-              <li>
-                Generated code was sometimes inconsistent with existing project
-                structure
-              </li>
-              <li>
-                Visual and UI outputs lacked consistency without manual
-                adjustment
-              </li>
-              <li>
-                AI-generated content (especially text) was often too long or not
-                aligned with user needs
-              </li>
-              <li>
-                Some suggestions were technically correct but not suitable for
-                the project context
-              </li>
-            </ul>
-            <p>
-              As a result, relying directly on AI outputs without critical
-              evaluation would have led to poor usability and design
-              inconsistency.
-            </p>
-          </div>
-          <div class="outline-item">
-            <h4>Validation and Refinement Process</h4>
-            <p>
-              To ensure quality and correctness, all AI-generated outputs were
-              carefully reviewed and refined:
-            </p>
-            <ul class="persona-list">
-              <li>
-                Code suggestions were tested, simplified, and rewritten when
-                necessary
-              </li>
-              <li>
-                UI content was shortened and adjusted based on usability testing
-                feedback
-              </li>
-              <li>
-                Design ideas generated by AI were evaluated against user
-                requirements and personas
-              </li>
-              <li>
-                Multiple iterations were performed to align AI outputs with the
-                overall design vision
-              </li>
-            </ul>
-            <p>
-              This process ensured that AI acted as a supportive tool rather
-              than a decision-maker, with final design choices always guided by
-              user needs and evaluation results.
-            </p>
-          </div>
-          <div class="outline-item">
-            <h4>Reflection</h4>
-            <p>
-              Overall, AI-assisted development significantly improved efficiency
-              and ideation breadth, but required strong human judgment to
-              maintain coherence, usability, and design quality. This balance
-              between automation and critical thinking was essential in shaping
-              the final StoryLens system.
-            </p>
+      <section class="section container reveal ai-process-section" id="ai-assisted-development">
+        <div class="ai-process-hero">
+          <span class="section-header-accent" aria-hidden="true"></span>
+          <h2 class="section-title">AI-assisted Development / Vibe Coding Process</h2>
+          <p class="section-intro">
+            During the development of StoryLens, we adopted an AI-assisted
+            workflow (often referred to as &ldquo;vibe coding&rdquo;) to support
+            both design and implementation. Rather than replacing human
+            decision-making, AI tools were used to accelerate iteration, explore
+            alternatives, and refine ideas.
+          </p>
+          <div class="ai-process-path" aria-hidden="true">
+            <svg viewBox="0 0 640 90" preserveAspectRatio="none">
+              <path d="M8 66 C 86 22, 164 86, 242 50 C 320 18, 398 80, 476 42 C 534 14, 588 20, 632 10"></path>
+              <circle cx="88" cy="34" r="5"></circle>
+              <circle cx="196" cy="58" r="5"></circle>
+              <circle cx="304" cy="34" r="5"></circle>
+              <circle cx="412" cy="50" r="5"></circle>
+              <circle cx="520" cy="24" r="5"></circle>
+              <circle cx="632" cy="10" r="6"></circle>
+            </svg>
           </div>
         </div>
+
+        <div class="ai-process-grid">
+          <article class="ai-process-card">
+            <div class="ai-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M14.7 6.3a4 4 0 0 0 4.9 4.9l-7.8 7.8a2 2 0 0 1-2.8 0l-1-1a2 2 0 0 1 0-2.8l7.8-7.8Z"></path>
+                <path d="m16 8 2-2"></path>
+                <path d="M4 20h4"></path>
+              </svg>
+            </div>
+            <span class="ai-card-divider" aria-hidden="true"></span>
+            <div class="ai-card-content">
+              <h4>1. Tools Used</h4>
+              <ul>
+                <li>Large language models for UI text, idea structuring, and debugging</li>
+                <li>AI coding tools for frontend refinement and component structure</li>
+                <li>Image generation tools for early visual exploration</li>
+                <li>AI Q&amp;A for quick technical understanding</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="ai-process-card">
+            <div class="ai-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 19h16"></path>
+                <path d="M6 16v-4"></path>
+                <path d="M11 16v-7"></path>
+                <path d="M16 16v-10"></path>
+                <path d="m6 8 3-2 3 1 5-3"></path>
+              </svg>
+            </div>
+            <span class="ai-card-divider" aria-hidden="true"></span>
+            <div class="ai-card-content">
+              <h4>2. What Worked Well</h4>
+              <ul>
+                <li>Rapid prototyping of UI text and flows</li>
+                <li>Alternative design directions during ideation</li>
+                <li>Debugging support and code-error identification</li>
+                <li>Support for technical structure such as API flow and component hierarchy</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="ai-process-card">
+            <div class="ai-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 3 2.7 19h18.6Z"></path>
+                <path d="M12 9v4"></path>
+                <path d="M12 16h.01"></path>
+              </svg>
+            </div>
+            <span class="ai-card-divider" aria-hidden="true"></span>
+            <div class="ai-card-content">
+              <h4>3. What Did Not Work Well</h4>
+              <ul>
+                <li>Some generated code was inconsistent with project structure</li>
+                <li>UI outputs lacked consistency without manual refinement</li>
+                <li>AI-generated text was sometimes too long or misaligned with user needs</li>
+                <li>Some suggestions were technically correct but not suitable for context</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="ai-process-card">
+            <div class="ai-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M20 6v5h-5"></path>
+                <path d="M4 18v-5h5"></path>
+                <path d="M18 11a7 7 0 0 0-12-2"></path>
+                <path d="M6 13a7 7 0 0 0 12 2"></path>
+              </svg>
+            </div>
+            <span class="ai-card-divider" aria-hidden="true"></span>
+            <div class="ai-card-content">
+              <h4>4. Validation &amp; Refinement Process</h4>
+              <ul>
+                <li>Code suggestions were tested, simplified, and rewritten when needed</li>
+                <li>UI content was shortened and adjusted using usability testing feedback</li>
+                <li>AI-generated ideas were checked against user requirements and personas</li>
+                <li>Multiple iterations aligned outputs with the overall design vision</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <article class="ai-reflection-banner" aria-label="AI-assisted process reflection">
+          <span class="ai-reflection-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="m12 3 1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8Z"></path>
+              <path d="M19.5 4.5v3"></path>
+              <path d="M21 6h-3"></path>
+            </svg>
+          </span>
+          <span class="ai-reflection-label">REFLECTION</span>
+          <span class="ai-reflection-divider" aria-hidden="true"></span>
+          <p class="ai-reflection-text">
+            AI-assisted development significantly improved efficiency and ideation breadth, but strong human judgment was essential to maintain coherence, usability, and design quality throughout the process.
+          </p>
+        </article>
       </section>
 
       <section class="section container reveal" id="evaluation-reflection">
-        <h2 class="section-title">Evaluation &amp; Reflection</h2>
-        <p class="eval-intro">
+        <div class="section-header-block">
+          <span class="section-header-accent" aria-hidden="true"></span>
+          <h2 class="section-title">Evaluation &amp; Reflection</h2>
+          <p class="eval-intro section-intro">
           To evaluate whether StoryLens could support a clearer, richer, and
           more playful museum visit, we conducted a small usability test and
           used the findings to guide focused design iterations.
         </p>
+        </div>
         <div class="outline-group">
-          <h3 class="requirements-subtitle" id="usability-testing">
+          <h3 class="requirements-subtitle eval-subtitle" id="usability-testing">
             Usability Testing
           </h3>
-          <div class="outline-item">
+          <div class="outline-item eval-method-panel">
             <h4>Usability Testing Method</h4>
             <p>
               To evaluate whether StoryLens could support a clearer, richer, and
@@ -1653,20 +1801,24 @@
               screenshots. These materials were used to identify usability
               issues and guide the next design iteration.
             </p>
-            <h3 class="requirements-subtitle">Key Findings</h3>
-            <div class="eval-quote-grid">
-              <article class="eval-quote-card">
-                <h5>F1: AI responses needed to be shorter and easier to act on.</h5>
+          </div>
+
+            <h3 class="requirements-subtitle eval-findings-title">Key Findings</h3>
+            <div class="key-findings-grid">
+              <article class="key-finding-card">
+                <span class="finding-badge">F1</span>
+                <h5>AI responses needed to be shorter and easier to act on.</h5>
                 <p>
-                  Participants felt that long AI-generated explanations
-                  could be overwhelming during a museum visit. They preferred
-                  concise guidance, quick suggestions, and options they could
-                  tap directly instead of reading long paragraphs.
+                  Participants felt that long AI-generated explanations could be
+                  overwhelming during a museum visit. They preferred concise
+                  guidance, quick suggestions, and options they could tap
+                  directly instead of reading long paragraphs.
                 </p>
               </article>
-              <article class="eval-quote-card">
+              <article class="key-finding-card">
+                <span class="finding-badge">F2</span>
                 <h5>
-                  F2: QR-based scanning felt more reliable than open-ended image
+                  QR-based scanning felt more reliable than open-ended image
                   recognition.
                 </h5>
                 <p>
@@ -1677,10 +1829,11 @@
                   on AI image recognition.
                 </p>
               </article>
-              <article class="eval-quote-card">
+              <article class="key-finding-card">
+                <span class="finding-badge">F3</span>
                 <h5>
-                  F3: The journey record needed stronger motivation beyond
-                  simple history tracking.
+                  The journey record needed stronger motivation beyond simple
+                  history tracking.
                 </h5>
                 <p>
                   Participants liked the idea of recording visited exhibits, but
@@ -1691,21 +1844,23 @@
                 </p>
               </article>
             </div>
-            <h3 class="requirements-subtitle">Participant Feedback Summary</h3>
+            <h3 class="requirements-subtitle feedback-summary-title">
+              Participant Feedback Summary
+            </h3>
             <p>
               Participants reported that route guidance helped reduce
               uncertainty, scanning made artifact information more engaging, and
               the collection and reward system made the visit feel more playful.
             </p>
-            <div class="eval-quote-grid">
-              <article class="eval-quote-card">
+            <div class="feedback-summary-grid">
+              <article class="feedback-summary-card">
                 <h5>Route Guidance</h5>
                 <p>
                   Participants felt that AI route guidance helped them
                   understand where to go next.
                 </p>
               </article>
-              <article class="eval-quote-card">
+              <article class="feedback-summary-card">
                 <h5>Artifact Scanning</h5>
                 <p>
                   Participants felt that scanning made artifact information
@@ -1713,7 +1868,7 @@
                   alone.
                 </p>
               </article>
-              <article class="eval-quote-card">
+              <article class="feedback-summary-card">
                 <h5>Journey Record and Rewards</h5>
                 <p>
                   Participants felt that collection progress, community sharing,
@@ -1804,10 +1959,10 @@
             </p>
           </div>
 
-          <h3 class="requirements-subtitle" id="iterative-refinement">
+          <h3 class="requirements-subtitle eval-subtitle" id="iterative-refinement">
             Iterative Refinement
           </h3>
-          <div class="outline-item">
+          <div class="outline-item eval-iteration-panel">
             <h4>Design Iterations Based on Feedback</h4>
             <p>
               Based on the usability testing results, we refined the prototype
@@ -1911,8 +2066,8 @@
             </div>
           </div>
 
-          <h3 class="requirements-subtitle">Playfulness Evaluation</h3>
-          <div class="outline-item">
+          <h3 class="requirements-subtitle eval-subtitle">Playfulness Evaluation</h3>
+          <div class="outline-item eval-note-panel">
             <p>
               We define &ldquo;playful&rdquo; as more than simply adding points
               or rewards. In StoryLens, playfulness is reflected in three
@@ -1928,10 +2083,10 @@
             </p>
           </div>
 
-          <h3 class="requirements-subtitle">
+          <h3 class="requirements-subtitle eval-subtitle">
             Participant Demographics and Testing Tasks
           </h3>
-          <div class="alignment-wrap">
+          <div class="alignment-wrap eval-demographics-wrap">
             <table class="alignment-table">
               <thead>
                 <tr>
@@ -1967,7 +2122,7 @@
               </tbody>
             </table>
           </div>
-          <p>
+          <p class="eval-consent-note">
             <em>All participants provided informed consent prior to testing.</em>
           </p>
 
@@ -2113,7 +2268,7 @@
           </section>
         </div>
 
-        <footer class="container">© 2026 StoryLens — CPT208 Group A3-3</footer>
+        <footer class="container">? 2026 StoryLens ?? CPT208 Group A3-3</footer>
       </section>
     </main>
     <div
@@ -2136,3 +2291,11 @@
         <script src="js/main.js"></script>
   </body>
 </html>
+
+
+
+
+
+
+
+
