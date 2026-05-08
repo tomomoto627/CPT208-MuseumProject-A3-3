@@ -241,3 +241,8 @@
           switchJourney("jeanette");
         }
       }
+
+      // Fallback: keep all reveal sections visible even if later JS errors occur.
+      window.setTimeout(() => {
+        document.querySelectorAll(".reveal").forEach((el) => el.classList.add("show"));
+      }, 1800);

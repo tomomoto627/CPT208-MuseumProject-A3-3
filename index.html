@@ -133,7 +133,7 @@
         <div class="section-header-block">
           <span class="section-header-accent" aria-hidden="true"></span>
           <h2 class="section-title">Team Members</h2>
-          <p class="section-intro">This section introduces the project team and summarizes each member's primary role and implementation contribution in the StoryLens workflow.</p>
+
         </div>
         <div class="team-grid">
           <article class="member-card member-1">
@@ -148,8 +148,8 @@
               <h3 class="member-name">Minghao Lin</h3>
               <p class="student-id">Student ID: 2361282</p>
               <p class="member-intro">
-                Frontend Lead Developer + State Management.
-                </p>Vue3 + Vite setup, core pages development, QR scanning, 3D rendering and global state management.
+                <span class="member-role">Frontend Lead Developer + State Management.</span>
+                Vue3 + Vite setup, core pages development, QR scanning, 3D rendering and global state management.
               </p>
             </div>
           </article>
@@ -163,8 +163,8 @@
               <h3 class="member-name">Zihan Qian</h3>
               <p class="student-id">Student ID: 2361320</p>
               <p class="member-intro">
-                Testing + Deployment + Documentation.
-                </p>Frontend-backend debugging, functional testing, deployment management and documentation preparation.
+                <span class="member-role">Testing + Deployment + Documentation.</span>
+                Frontend-backend debugging, functional testing, deployment management and documentation preparation.
               </p>
             </div>
           </article>
@@ -178,8 +178,8 @@
               <h3 class="member-name">Jiaqi Wang</h3>
               <p class="student-id">Student ID: 2362441</p>
               <p class="member-intro">
-                Frontend Page Developer + Styling / UI. 
-                </p>Business pages development, UI design, shopping cart/points features and mobile optimization.
+                <span class="member-role">Frontend Page Developer + Styling / UI.</span>
+                Business pages development, UI design, shopping cart/points features and mobile optimization.
               </p>
             </div>
           </article>
@@ -193,8 +193,8 @@
               <h3 class="member-name">Xinyi Yuan</h3>
               <p class="student-id">Student ID: 2361143</p>
               <p class="member-intro">
-                Backend Developer + AI Services + Content.
-                </p>Express backend setup, API development, AI services integration and knowledge base management.
+                <span class="member-role">Backend Developer + AI Services + Content.</span>
+                Express backend setup, API development, AI services integration and knowledge base management.
               </p>
             </div>
           </article>
@@ -1771,23 +1771,55 @@
               Participants were asked to complete three core tasks:
             </p>
             <div class="eval-testing-grid">
-              <article class="requirement-card">
-                <h3>Task 1: Route Recommendation</h3>
+              <article class="tech-pillar-card eval-task-pillar">
+                <div class="tech-pillar-head">
+                  <span class="tech-pillar-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M4 18c5-1 7-8 12-8h4"></path>
+                      <path d="m16 6 4 4-4 4"></path>
+                    </svg>
+                  </span>
+                  <span class="tech-pillar-label">Task 01</span>
+                </div>
+                <h4>Task 1: Route Recommendation</h4>
+                <span class="tech-pillar-accent" aria-hidden="true"></span>
                 <p>
                   Ask the AI assistant for a recommended museum route based on
                   personal interests, available time, and preferred visiting
                   pace.
                 </p>
               </article>
-              <article class="requirement-card">
-                <h3>Task 2: Artifact Scanning</h3>
+              <article class="tech-pillar-card eval-task-pillar">
+                <div class="tech-pillar-head">
+                  <span class="tech-pillar-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M4 9V6h3"></path>
+                      <path d="M20 9V6h-3"></path>
+                      <path d="M4 15v3h3"></path>
+                      <path d="M20 15v3h-3"></path>
+                      <rect x="8" y="8" width="8" height="8" rx="1.5"></rect>
+                    </svg>
+                  </span>
+                  <span class="tech-pillar-label">Task 02</span>
+                </div>
+                <h4>Task 2: Artifact Scanning</h4>
+                <span class="tech-pillar-accent" aria-hidden="true"></span>
                 <p>
                   Use the scanning feature to identify an artifact and unlock
                   its story, context, and related label information.
                 </p>
               </article>
-              <article class="requirement-card">
-                <h3>Task 3: Journey Record and Rewards</h3>
+              <article class="tech-pillar-card eval-task-pillar">
+                <div class="tech-pillar-head">
+                  <span class="tech-pillar-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path d="m12 4 2.2 4.6 5.1.7-3.7 3.6.9 5.1-4.5-2.4-4.5 2.4.9-5.1-3.7-3.6 5.1-.7Z"></path>
+                    </svg>
+                  </span>
+                  <span class="tech-pillar-label">Task 03</span>
+                </div>
+                <h4>Task 3: Journey Record and Rewards</h4>
+                <span class="tech-pillar-accent" aria-hidden="true"></span>
                 <p>
                   Review collected exhibits, check points or collection
                   progress, and explore community sharing or reward redemption
@@ -1805,43 +1837,79 @@
 
             <h3 class="requirements-subtitle eval-findings-title">Key Findings</h3>
             <div class="key-findings-grid">
-              <article class="key-finding-card">
-                <span class="finding-badge">F1</span>
-                <h5>AI responses needed to be shorter and easier to act on.</h5>
-                <p>
-                  Participants felt that long AI-generated explanations could be
-                  overwhelming during a museum visit. They preferred concise
-                  guidance, quick suggestions, and options they could tap
-                  directly instead of reading long paragraphs.
-                </p>
+              <article class="design-alt-option-card key-finding-option">
+                <div class="design-alt-left">
+                  <span class="design-alt-index">F1</span>
+                  <span class="design-alt-divider" aria-hidden="true"></span>
+                </div>
+                <div class="design-alt-main">
+                  <h4>AI responses needed to be shorter and easier to act on.</h4>
+                  <p>
+                    Participants felt that long AI-generated explanations could be
+                    overwhelming during a museum visit. They preferred concise
+                    guidance, quick suggestions, and options they could tap
+                    directly instead of reading long paragraphs.
+                  </p>
+                </div>
+                <span class="design-alt-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M7 12h10"></path>
+                    <path d="M7 8h10"></path>
+                    <path d="M7 16h6"></path>
+                  </svg>
+                </span>
               </article>
-              <article class="key-finding-card">
-                <span class="finding-badge">F2</span>
-                <h5>
-                  QR-based scanning felt more reliable than open-ended image
-                  recognition.
-                </h5>
-                <p>
-                  Participants understood the value of scanning artifacts, but
-                  they expected the interaction to be fast and predictable.
-                  Based on this feedback, QR or label-based scanning was
-                  considered more suitable for the prototype than relying only
-                  on AI image recognition.
-                </p>
+              <article class="design-alt-option-card key-finding-option">
+                <div class="design-alt-left">
+                  <span class="design-alt-index">F2</span>
+                  <span class="design-alt-divider" aria-hidden="true"></span>
+                </div>
+                <div class="design-alt-main">
+                  <h4>
+                    QR-based scanning felt more reliable than open-ended image
+                    recognition.
+                  </h4>
+                  <p>
+                    Participants understood the value of scanning artifacts, but
+                    they expected the interaction to be fast and predictable.
+                    Based on this feedback, QR or label-based scanning was
+                    considered more suitable for the prototype than relying only
+                    on AI image recognition.
+                  </p>
+                </div>
+                <span class="design-alt-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M4 9V6h3"></path>
+                    <path d="M20 9V6h-3"></path>
+                    <path d="M4 15v3h3"></path>
+                    <path d="M20 15v3h-3"></path>
+                    <rect x="8" y="8" width="8" height="8" rx="1.5"></rect>
+                  </svg>
+                </span>
               </article>
-              <article class="key-finding-card">
-                <span class="finding-badge">F3</span>
-                <h5>
-                  The journey record needed stronger motivation beyond simple
-                  history tracking.
-                </h5>
-                <p>
-                  Participants liked the idea of recording visited exhibits, but
-                  they felt the feature would be more engaging if it included
-                  collection progress, points, community sharing, and reward
-                  redemption. This suggested that the journey record should
-                  support both personal memory and playful motivation.
-                </p>
+              <article class="design-alt-option-card key-finding-option">
+                <div class="design-alt-left">
+                  <span class="design-alt-index">F3</span>
+                  <span class="design-alt-divider" aria-hidden="true"></span>
+                </div>
+                <div class="design-alt-main">
+                  <h4>
+                    The journey record needed stronger motivation beyond simple
+                    history tracking.
+                  </h4>
+                  <p>
+                    Participants liked the idea of recording visited exhibits, but
+                    they felt the feature would be more engaging if it included
+                    collection progress, points, community sharing, and reward
+                    redemption. This suggested that the journey record should
+                    support both personal memory and playful motivation.
+                  </p>
+                </div>
+                <span class="design-alt-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="m12 4 2.2 4.6 5.1.7-3.7 3.6.9 5.1-4.5-2.4-4.5 2.4.9-5.1-3.7-3.6 5.1-.7Z"></path>
+                  </svg>
+                </span>
               </article>
             </div>
             <h3 class="requirements-subtitle feedback-summary-title">
@@ -1853,23 +1921,43 @@
               the collection and reward system made the visit feel more playful.
             </p>
             <div class="feedback-summary-grid">
-              <article class="feedback-summary-card">
-                <h5>Route Guidance</h5>
+              <article class="related-work-card">
+                <span class="related-work-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M4 18c5-1 7-8 12-8h4"></path>
+                    <path d="m16 6 4 4-4 4"></path>
+                  </svg>
+                </span>
+                <h3>Route Guidance</h3>
                 <p>
                   Participants felt that AI route guidance helped them
                   understand where to go next.
                 </p>
               </article>
-              <article class="feedback-summary-card">
-                <h5>Artifact Scanning</h5>
+              <article class="related-work-card">
+                <span class="related-work-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M4 9V6h3"></path>
+                    <path d="M20 9V6h-3"></path>
+                    <path d="M4 15v3h3"></path>
+                    <path d="M20 15v3h-3"></path>
+                    <rect x="8" y="8" width="8" height="8" rx="1.5"></rect>
+                  </svg>
+                </span>
+                <h3>Artifact Scanning</h3>
                 <p>
                   Participants felt that scanning made artifact information
                   easier to access and more engaging than reading static labels
                   alone.
                 </p>
               </article>
-              <article class="feedback-summary-card">
-                <h5>Journey Record and Rewards</h5>
+              <article class="related-work-card">
+                <span class="related-work-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="m12 4 2.2 4.6 5.1.7-3.7 3.6.9 5.1-4.5-2.4-4.5 2.4.9-5.1-3.7-3.6 5.1-.7Z"></path>
+                  </svg>
+                </span>
+                <h3>Journey Record and Rewards</h3>
                 <p>
                   Participants felt that collection progress, community sharing,
                   and rewards made the visit feel more playful and encouraged
@@ -1890,30 +1978,81 @@
               Feedback was anonymised, and the evaluation results are presented
               as summarised findings rather than direct personal statements.
             </p>
-            <h3 class="requirements-subtitle">Usability Testing Data Summary</h3>
-            <p>
-              To make the evaluation more evidence-based, we summarised the
-              results of three alpha usability testing tasks. Each participant
-              was asked to complete the core interaction flow of StoryLens,
-              including route recommendation, artifact scanning, and journey
-              continuation features. The purpose of this test was not to produce
-              statistically generalisable results, but to identify early
-              usability issues and design implications for the next iteration.
-            </p>
-            <div class="alignment-wrap">
-              <table class="alignment-table">
+            <section class="usability-data-summary" aria-label="Usability Testing Data Summary">
+              <h3 class="requirements-subtitle">Usability Testing Data Summary</h3>
+              <p class="usability-summary-subtext">
+                Results from three alpha usability testing tasks were summarised to identify early usability issues and design implications for the next iteration of StoryLens.
+              </p>
+
+              <div class="usability-summary-cards">
+                <article class="usability-summary-card">
+                  <span class="usability-summary-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M9 7h10"></path>
+                      <path d="M9 12h10"></path>
+                      <path d="M9 17h10"></path>
+                      <path d="m4 7 1.5 1.5L8 6"></path>
+                      <path d="m4 12 1.5 1.5L8 11"></path>
+                      <path d="m4 17 1.5 1.5L8 16"></path>
+                    </svg>
+                  </span>
+                  <div>
+                    <p class="usability-summary-value">3 Tasks</p>
+                    <p class="usability-summary-meta">Alpha task set</p>
+                  </div>
+                </article>
+                <article class="usability-summary-card">
+                  <span class="usability-summary-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <circle cx="9" cy="9" r="3"></circle>
+                      <circle cx="17" cy="10" r="2.5"></circle>
+                      <path d="M3 19a6 6 0 0 1 12 0"></path>
+                      <path d="M14 19a4.5 4.5 0 0 1 7 0"></path>
+                    </svg>
+                  </span>
+                  <div>
+                    <p class="usability-summary-value">3 Participants</p>
+                    <p class="usability-summary-meta">Observed across all tasks</p>
+                  </div>
+                </article>
+                <article class="usability-summary-card">
+                  <span class="usability-summary-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M10 3v4l-4 7a4 4 0 0 0 3.5 6h5a4 4 0 0 0 3.5-6l-4-7V3"></path>
+                      <path d="M9 12h6"></path>
+                    </svg>
+                  </span>
+                  <div>
+                    <p class="usability-summary-value">Early-stage formative test</p>
+                    <p class="usability-summary-meta">Alpha usability evaluation</p>
+                  </div>
+                </article>
+              </div>
+
+              <div class="alignment-wrap usability-data-table-wrap">
+                <table class="alignment-table usability-data-table">
                 <thead>
                   <tr>
-                    <th>Task</th>
-                    <th>Success Rate</th>
-                    <th>Main Issue Observed</th>
-                    <th>Design Implication</th>
+                    <th>TASK</th>
+                    <th>SUCCESS RATE</th>
+                    <th>MAIN ISSUE OBSERVED</th>
+                    <th>DESIGN IMPLICATION</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Route Recommendation</td>
-                    <td>3/3 completed</td>
+                    <td>
+                      <div class="usability-task-cell">
+                        <span class="usability-task-dot" aria-hidden="true">
+                          <svg viewBox="0 0 24 24">
+                            <path d="M4 18c5-1 7-8 12-8h4"></path>
+                            <path d="m16 6 4 4-4 4"></path>
+                          </svg>
+                        </span>
+                        <span>Route Recommendation</span>
+                      </div>
+                    </td>
+                    <td class="usability-rate">3/3 completed</td>
                     <td>
                       Some AI-generated route explanations were too long and
                       required extra reading effort.
@@ -1924,8 +2063,21 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>Artifact Scanning</td>
-                    <td>3/3 completed</td>
+                    <td>
+                      <div class="usability-task-cell">
+                        <span class="usability-task-dot" aria-hidden="true">
+                          <svg viewBox="0 0 24 24">
+                            <path d="M4 9V6h3"></path>
+                            <path d="M20 9V6h-3"></path>
+                            <path d="M4 15v3h3"></path>
+                            <path d="M20 15v3h-3"></path>
+                            <rect x="8" y="8" width="8" height="8" rx="1.5"></rect>
+                          </svg>
+                        </span>
+                        <span>Artifact Scanning</span>
+                      </div>
+                    </td>
+                    <td class="usability-rate">3/3 completed</td>
                     <td>
                       Image recognition felt uncertain in some situations,
                       especially when users expected instant feedback.
@@ -1936,8 +2088,17 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>Journey Record &amp; Rewards</td>
-                    <td>3/3 completed</td>
+                    <td>
+                      <div class="usability-task-cell">
+                        <span class="usability-task-dot" aria-hidden="true">
+                          <svg viewBox="0 0 24 24">
+                            <path d="m12 4 2.2 4.6 5.1.7-3.7 3.6.9 5.1-4.5-2.4-4.5 2.4.9-5.1-3.7-3.6 5.1-.7Z"></path>
+                          </svg>
+                        </span>
+                        <span>Journey Record &amp; Rewards</span>
+                      </div>
+                    </td>
+                    <td class="usability-rate">3/3 completed</td>
                     <td>
                       Users understood the idea, but the motivation for
                       continued use was not immediately strong enough.
@@ -1949,20 +2110,30 @@
                   </tr>
                 </tbody>
               </table>
-            </div>
-            <p>
-              These results suggested that the main interaction flow was
-              understandable, but the system needed to reduce cognitive load and
-              provide clearer feedback. Therefore, our later refinements focused
-              on simplifying AI text, improving scan reliability, and making the
-              journey record more motivating and meaningful.
-            </p>
+              </div>
+
+              <div class="usability-highlight-box">
+                <span class="usability-highlight-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M9.2 14.6a4.3 4.3 0 1 1 5.6 0c-.8.6-1.3 1.4-1.5 2.4h-2.6c-.2-1-.7-1.8-1.5-2.4Z"></path>
+                    <path d="M10.3 20h3.4"></path>
+                    <path d="M10.8 22h2.4"></path>
+                  </svg>
+                </span>
+                <div>
+                  <p class="usability-highlight-title">Key Takeaway</p>
+                  <p class="usability-highlight-text">
+                    The main interaction flow was understandable, but the system needed to reduce cognitive load, improve scan reliability, and make the journey record more motivating and meaningful.
+                  </p>
+                </div>
+              </div>
+            </section>
           </div>
 
           <h3 class="requirements-subtitle eval-subtitle" id="iterative-refinement">
             Iterative Refinement
           </h3>
-          <div class="outline-item eval-iteration-panel">
+          <section class="outline-item eval-iteration-panel iterative-refinement-panel">
             <h4>Design Iterations Based on Feedback</h4>
             <p>
               Based on the usability testing results, we refined the prototype
@@ -1991,72 +2162,82 @@
               with the project goal: turning fragmented museum information into
               a clearer, story-rich, and more playful personal journey.
             </p>
-            <h3 class="requirements-subtitle">Finding-to-Iteration Mapping</h3>
-            <div class="eval-response-grid">
-              <article class="eval-response-card">
-                <p class="eval-response-row-title">Finding</p>
-                <p>
-                  F1: AI responses were too long.
-                </p>
-                <p class="eval-response-row-title">Design Response</p>
-                <p>
-                  Added concise AI responses and one-click question prompts.
-                </p>
-                <p class="eval-response-row-title">Reason</p>
+            <h3 class="requirements-subtitle iterative-map-title">Finding-to-Iteration Mapping</h3>
+            <div class="iterative-map-grid">
+              <article class="iterative-map-card">
+                <div class="iterative-map-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="11" cy="11" r="6"></circle>
+                    <path d="m20 20-4.2-4.2"></path>
+                  </svg>
+                </div>
+                <p class="iterative-map-label">FINDING</p>
+                <p>F1: AI responses were too long.</p>
+                <p class="iterative-map-label">DESIGN RESPONSE</p>
+                <p>Added concise AI responses and one-click question prompts.</p>
+                <p class="iterative-map-label">REASON</p>
                 <p>
                   Helps visitors receive guidance quickly without stopping their
                   museum visit for too long.
                 </p>
               </article>
-              <article class="eval-response-card">
-                <p class="eval-response-row-title">Finding</p>
-                <p>
-                  F2: Image recognition alone felt uncertain.
-                </p>
-                <p class="eval-response-row-title">Design Response</p>
+              <article class="iterative-map-card">
+                <div class="iterative-map-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M4 9V4h5"></path>
+                    <path d="M20 9V4h-5"></path>
+                    <path d="M4 15v5h5"></path>
+                    <path d="M20 15v5h-5"></path>
+                    <rect x="9" y="9" width="6" height="6" rx="1"></rect>
+                  </svg>
+                </div>
+                <p class="iterative-map-label">FINDING</p>
+                <p>F2: Image recognition alone felt uncertain.</p>
+                <p class="iterative-map-label">DESIGN RESPONSE</p>
                 <p>
                   Prioritised QR or label-based scanning, with AI used to
                   generate richer stories after identification.
                 </p>
-                <p class="eval-response-row-title">Reason</p>
-                <p>
-                  Makes artifact scanning more reliable and easier to
-                  understand.
-                </p>
+                <p class="iterative-map-label">REASON</p>
+                <p>Makes artifact scanning more reliable and easier to understand.</p>
               </article>
-              <article class="eval-response-card">
-                <p class="eval-response-row-title">Finding</p>
-                <p>
-                  F3: Journey record needed more motivation.
-                </p>
-                <p class="eval-response-row-title">Design Response</p>
+              <article class="iterative-map-card">
+                <div class="iterative-map-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="m12 3.5 2.5 5 5.5.8-4 3.9.9 5.4-4.9-2.6-4.9 2.6.9-5.4-4-3.9 5.5-.8z"></path>
+                  </svg>
+                </div>
+                <p class="iterative-map-label">FINDING</p>
+                <p>F3: Journey record needed more motivation.</p>
+                <p class="iterative-map-label">DESIGN RESPONSE</p>
                 <p>
                   Added collection progress, points, community sharing, and
                   reward redemption.
                 </p>
-                <p class="eval-response-row-title">Reason</p>
+                <p class="iterative-map-label">REASON</p>
                 <p>
                   Encourages continued exploration and makes the museum journey
                   feel more playful and memorable.
                 </p>
               </article>
             </div>
-            <div class="before-after-images">
+
+            <div class="before-after-images iterative-shots">
               <h5>Before &amp; After Screenshots:</h5>
-              <div class="lowfi-collage">
-                <figure class="lowfi-item">
+              <div class="iterative-shots-scroller">
+                <figure class="iterative-shot-card">
                   <img src="assets/images/Hi-Fi/user1.png" alt="User 1 Before/After" />
                   <figcaption>
                     User 1 - AI response and common questions optimization
                   </figcaption>
                 </figure>
-                <figure class="lowfi-item">
+                <figure class="iterative-shot-card">
                   <img src="assets/images/Hi-Fi/user2.png" alt="User 2 Before/After" />
                   <figcaption>
                     User 2 - QR code prioritization with AI fallback
                   </figcaption>
                 </figure>
-                <figure class="lowfi-item">
+                <figure class="iterative-shot-card">
                   <img src="assets/images/Hi-Fi/user3.png" alt="User 3 Before/After" />
                   <figcaption>
                     User 3 - Community sharing and user footprint features
@@ -2064,30 +2245,41 @@
                 </figure>
               </div>
             </div>
-          </div>
+          </section>
 
-          <h3 class="requirements-subtitle eval-subtitle">Playfulness Evaluation</h3>
-          <div class="outline-item eval-note-panel">
-            <p>
-              We define &ldquo;playful&rdquo; as more than simply adding points
-              or rewards. In StoryLens, playfulness is reflected in three
-              aspects: curiosity-driven exploration, visible progress, and
-              social sharing. User feedback indicated that the AI route
-              recommendation helped visitors start exploring confidently, while
-              scanning artifacts, collecting rewards, and checking journey
-              records made the museum visit feel more active and continuous.
-              Community sharing features extended engagement beyond individual
-              visits. Future evaluations should measure playfulness more
-              directly through questions about enjoyment, curiosity, motivation,
-              and willingness to continue exploring.
-            </p>
-          </div>
+          <h3 class="requirements-subtitle eval-subtitle playfulness-title">Playfulness Evaluation</h3>
+          <section class="outline-item eval-note-panel playfulness-panel">
+            <div class="playfulness-layout">
+              <div class="playfulness-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 4.2 13.8 8l4.2.6-3 2.9.7 4.1-3.7-2-3.7 2 .7-4.1-3-2.9 4.2-.6z"></path>
+                  <path d="M7.2 17.4c1.2.9 2.9 1.4 4.8 1.4s3.6-.5 4.8-1.4"></path>
+                </svg>
+              </div>
+              <div class="playfulness-copy">
+                <h4>Playfulness as Interaction Quality</h4>
+                <p>
+                  We define &ldquo;playful&rdquo; as more than simply adding points
+                  or rewards. In StoryLens, playfulness is reflected in three
+                  aspects: <span class="eval-key-text">curiosity-driven exploration</span>, <span class="eval-key-text">visible progress</span>, and
+                  <span class="eval-key-text">social sharing</span>. User feedback indicated that the AI route
+                  recommendation helped visitors start exploring confidently, while
+                  scanning artifacts, collecting rewards, and checking journey
+                  records made the museum visit feel more active and continuous.
+                  Community sharing features extended engagement beyond individual
+                  visits. Future evaluations should measure playfulness more
+                  directly through questions about enjoyment, curiosity, motivation,
+                  and willingness to continue exploring.
+                </p>
+              </div>
+            </div>
+          </section>
 
-          <h3 class="requirements-subtitle eval-subtitle">
+          <h3 class="requirements-subtitle eval-subtitle demographics-title">
             Participant Demographics and Testing Tasks
           </h3>
-          <div class="alignment-wrap eval-demographics-wrap">
-            <table class="alignment-table">
+          <div class="alignment-wrap eval-demographics-wrap demo-table-wrap">
+            <table class="alignment-table demo-table">
               <thead>
                 <tr>
                   <th>Participant</th>
@@ -2099,25 +2291,25 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>P1</td>
-                  <td>Casual young visitor</td>
-                  <td>20&ndash;22</td>
-                  <td>Occasional visitor</td>
-                  <td>Route + Scan Flow</td>
+                  <td data-label="Participant"><span class="eval-key-text">P1</span></td>
+                  <td data-label="User Type">Casual young visitor</td>
+                  <td data-label="Age Group"><span class="eval-key-text">20&ndash;22</span></td>
+                  <td data-label="Museum Experience">Occasional visitor</td>
+                  <td data-label="Test Task"><span class="eval-key-text">Route + Scan Flow</span></td>
                 </tr>
                 <tr>
-                  <td>P2</td>
-                  <td>Casual young visitor</td>
-                  <td>20&ndash;22</td>
-                  <td>Rare visitor</td>
-                  <td>AI Story Assistant + Rewards</td>
+                  <td data-label="Participant"><span class="eval-key-text">P2</span></td>
+                  <td data-label="User Type">Casual young visitor</td>
+                  <td data-label="Age Group"><span class="eval-key-text">20&ndash;22</span></td>
+                  <td data-label="Museum Experience">Rare visitor</td>
+                  <td data-label="Test Task"><span class="eval-key-text">AI Story Assistant + Rewards</span></td>
                 </tr>
                 <tr>
-                  <td>P3</td>
-                  <td>Student / potential visitor</td>
-                  <td>20&ndash;22</td>
-                  <td>Occasional visitor</td>
-                  <td>Full Journey Test</td>
+                  <td data-label="Participant"><span class="eval-key-text">P3</span></td>
+                  <td data-label="User Type">Student / potential visitor</td>
+                  <td data-label="Age Group"><span class="eval-key-text">20&ndash;22</span></td>
+                  <td data-label="Museum Experience">Occasional visitor</td>
+                  <td data-label="Test Task"><span class="eval-key-text">Full Journey Test</span></td>
                 </tr>
               </tbody>
             </table>
