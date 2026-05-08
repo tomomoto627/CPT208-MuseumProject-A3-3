@@ -184,7 +184,7 @@
       const lightboxImg = document.getElementById("image-lightbox-img");
       const lightboxClose = document.getElementById("image-lightbox-close");
       const previewImages = document.querySelectorAll(
-        ".evidence-item img, .lowfi-item img",
+        ".evidence-item img, .lowfi-item img, .crazy-eights-item img, .iterative-shot-card img",
       );
 
       function closeLightbox() {
