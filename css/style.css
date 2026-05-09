@@ -1551,6 +1551,275 @@
         font-size: 1.02rem;
       }
 
+      .motivation-topic .motivation-card-group {
+        margin-top: 6px;
+        padding: 14px;
+        border: 1px solid rgba(153, 160, 170, 0.3);
+        border-radius: 22px;
+        background:
+          radial-gradient(95% 100% at 90% 6%, rgba(168, 201, 130, 0.06) 0%, rgba(168, 201, 130, 0) 55%),
+          linear-gradient(165deg, rgba(9, 13, 19, 0.92) 0%, rgba(5, 8, 13, 0.88) 100%);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.02);
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .motivation-topic .motivation-card {
+        position: relative;
+        margin-top: 0;
+        padding: 18px 18px;
+        border: 1px solid rgba(153, 160, 170, 0.28);
+        border-radius: 18px;
+        background:
+          radial-gradient(85% 95% at 88% 8%, rgba(168, 201, 130, 0.08) 0%, rgba(168, 201, 130, 0) 52%),
+          linear-gradient(165deg, rgba(10, 14, 20, 0.95) 0%, rgba(6, 10, 15, 0.92) 100%);
+        box-shadow:
+          0 10px 20px rgba(0, 0, 0, 0.2),
+          inset 0 0 0 1px rgba(255, 255, 255, 0.02);
+        transition:
+          transform 0.22s ease,
+          border-color 0.22s ease,
+          box-shadow 0.22s ease;
+        min-height: 210px;
+      }
+
+      .motivation-topic .motivation-card-no {
+        position: absolute;
+        top: 12px;
+        right: 14px;
+        font-size: 1.5rem;
+        line-height: 1;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        color: rgba(168, 201, 130, 0.42);
+        pointer-events: none;
+      }
+
+      .motivation-topic .motivation-card:hover {
+        transform: translateY(-3px);
+        border-color: rgba(168, 201, 130, 0.78);
+        box-shadow:
+          0 14px 24px rgba(0, 0, 0, 0.28),
+          0 0 14px rgba(168, 201, 130, 0.2),
+          inset 0 0 0 1px rgba(168, 201, 130, 0.16);
+      }
+
+      .motivation-topic .motivation-card-meta {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 0 0 10px;
+      }
+
+      .motivation-topic .motivation-card-icon {
+        width: 32px;
+        height: 32px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 999px;
+        border: 1px solid rgba(168, 201, 130, 0.55);
+        background: rgba(168, 201, 130, 0.08);
+        color: #b8d89a;
+        flex: 0 0 auto;
+      }
+
+      .motivation-topic .motivation-card-icon svg {
+        width: 16px;
+        height: 16px;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 1.8;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .motivation-topic .motivation-card-tag {
+        font-size: 0.84rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #dce7cc;
+      }
+
+      .motivation-topic .key-phrase {
+        color: #a8c982;
+        font-weight: 600;
+      }
+
+      .gap-table-wrap {
+        margin-left: 40px;
+        border: 1px solid rgba(153, 160, 170, 0.3);
+        border-radius: 18px;
+        overflow-x: auto;
+        background:
+          radial-gradient(95% 100% at 90% 6%, rgba(168, 201, 130, 0.05) 0%, rgba(168, 201, 130, 0) 55%),
+          linear-gradient(165deg, rgba(9, 13, 19, 0.92) 0%, rgba(5, 8, 13, 0.88) 100%);
+      }
+
+      .gap-table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 760px;
+      }
+
+      .gap-table th,
+      .gap-table td {
+        padding: 16px 18px;
+        vertical-align: top;
+        text-align: left;
+        border-bottom: 1px solid rgba(153, 160, 170, 0.28);
+        line-height: 1.55;
+      }
+
+      .gap-table thead th {
+        color: #f5f5f7;
+        font-size: 1.08rem;
+        font-weight: 700;
+        background: rgba(13, 17, 24, 0.66);
+      }
+
+      .gap-head {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .gap-icon {
+        width: 18px;
+        height: 18px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #a8c982;
+        flex: 0 0 auto;
+      }
+
+      .gap-icon svg {
+        width: 16px;
+        height: 16px;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 1.8;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .gap-table tbody td {
+        color: #d5dbe6;
+        transition:
+          transform 0.22s ease,
+          border-color 0.22s ease,
+          background-color 0.22s ease,
+          box-shadow 0.22s ease;
+      }
+
+      .gap-table tbody td:first-child {
+        color: #dff0ca;
+        font-weight: 600;
+        width: 20%;
+      }
+
+      .gap-table tbody tr:last-child td {
+        border-bottom: none;
+      }
+
+      .gap-table tbody tr:hover td {
+        transform: translateY(-3px);
+        border-color: rgba(168, 201, 130, 0.78);
+        background: rgba(168, 201, 130, 0.06);
+        box-shadow: inset 0 0 0 1px rgba(168, 201, 130, 0.2);
+      }
+
+      .gap-sources-wrap {
+        margin: 16px 0 0 40px;
+        border: 1px solid rgba(153, 160, 170, 0.3);
+        border-radius: 18px;
+        overflow-x: auto;
+        background:
+          radial-gradient(95% 100% at 90% 6%, rgba(168, 201, 130, 0.04) 0%, rgba(168, 201, 130, 0) 55%),
+          linear-gradient(165deg, rgba(9, 13, 19, 0.92) 0%, rgba(5, 8, 13, 0.88) 100%);
+      }
+
+      .gap-sources-table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 920px;
+      }
+
+      .gap-sources-table th,
+      .gap-sources-table td {
+        padding: 16px 18px;
+        text-align: left;
+        vertical-align: top;
+        border-bottom: 1px solid rgba(153, 160, 170, 0.28);
+      }
+
+      .gap-sources-table thead th {
+        width: 50%;
+        color: #f5f5f7;
+        font-size: 1.03rem;
+        font-weight: 700;
+        background: rgba(13, 17, 24, 0.66);
+      }
+
+      .gap-sources-table tbody td {
+        color: #d5dbe6;
+        line-height: 1.62;
+        transition:
+          transform 0.22s ease,
+          border-color 0.22s ease,
+          background-color 0.22s ease,
+          box-shadow 0.22s ease;
+      }
+
+      .gap-sources-table tbody tr:last-child td {
+        border-bottom: none;
+      }
+
+      .gap-sources-table tbody tr:hover td {
+        transform: translateY(-3px);
+        border-color: rgba(168, 201, 130, 0.78);
+        background: rgba(168, 201, 130, 0.06);
+        box-shadow: inset 0 0 0 1px rgba(168, 201, 130, 0.2);
+      }
+
+      .gap-ref-list,
+      .gap-product-list {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      .gap-ref-list li,
+      .gap-product-list li {
+        margin-bottom: 12px;
+      }
+
+      .gap-ref-list li:last-child,
+      .gap-product-list li:last-child {
+        margin-bottom: 0;
+      }
+
+      .gap-ref-list a {
+        color: #b8d89a;
+        word-break: break-all;
+        text-underline-offset: 3px;
+        transition: color 0.2s ease;
+      }
+
+      .gap-ref-list a:hover,
+      .gap-product-list a:hover {
+        color: #dff0ca;
+      }
+
+      .gap-product-list a {
+        color: #b8d89a;
+        word-break: break-all;
+        text-underline-offset: 3px;
+        transition: color 0.2s ease;
+      }
+
       @media (max-width: 700px) {
         .section-header-block {
           padding-left: 8px;
@@ -1564,6 +1833,28 @@
 
         .motivation-topic p {
           padding-left: 16px;
+        }
+
+        .gap-table-wrap {
+          margin-left: 16px;
+          border-radius: 14px;
+        }
+
+        .gap-sources-wrap {
+          margin-left: 16px;
+          border-radius: 14px;
+        }
+
+        .motivation-topic .motivation-card {
+          padding: 14px 14px;
+          min-height: auto;
+        }
+
+        .motivation-topic .motivation-card-group {
+          padding: 10px;
+          border-radius: 18px;
+          grid-template-columns: 1fr;
+          gap: 10px;
         }
       }
 
